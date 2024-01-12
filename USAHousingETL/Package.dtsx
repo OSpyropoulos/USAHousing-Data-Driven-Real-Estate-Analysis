@@ -1,38 +1,26 @@
 ﻿<?xml version="1.0"?>
 <DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
   DTS:refId="Package"
-  DTS:CreationDate="1/8/2024 6:49:49 PM"
+  DTS:CreationDate="1/11/2024 8:04:32 PM"
   DTS:CreationName="Microsoft.Package"
   DTS:CreatorComputerName="ODYSSEAS"
   DTS:CreatorName="ODYSSEAS\odysp"
-  DTS:DTSID="{215D96E0-E906-4A01-BB8F-ADF31C6CDAD8}"
+  DTS:DTSID="{337B9BBA-D198-4038-B344-13EDCF861CD5}"
   DTS:ExecutableType="Microsoft.Package"
   DTS:LastModifiedProductVersion="16.0.5397.1"
-  DTS:LocaleID="1032"
+  DTS:LocaleID="1033"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="43"
-  DTS:VersionGUID="{E0CEDBBC-AA7A-4814-BDA3-E8B80825B62B}">
+  DTS:VersionBuild="9"
+  DTS:VersionGUID="{7F518FDA-9A55-4586-8215-A2CEBF54257C}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
     <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[.\SQLEXPRESS.USAHousingDB]"
-      DTS:CreationName="OLEDB"
-      DTS:DTSID="{B1597079-CAAE-4D62-83DF-AC11F3C303DB}"
-      DTS:ObjectName=".\SQLEXPRESS.USAHousingDB">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:ConnectRetryCount="1"
-          DTS:ConnectRetryInterval="5"
-          DTS:ConnectionString="Data Source=.\SQLEXPRESS;Initial Catalog=USAHousingDB;Provider=SQLOLEDB.1;Integrated Security=SSPI;Application Name=SSIS-Package-{B1597079-CAAE-4D62-83DF-AC11F3C303DB}.\SQLEXPRESS.USAHousingDB;Auto Translate=False;" />
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[Flat File Connection Manager 5]"
+      DTS:refId="Package.ConnectionManagers[Flat File Connection Manager]"
       DTS:CreationName="FLATFILE"
-      DTS:DTSID="{F25B154C-1233-4D92-9B87-FC348B626C43}"
-      DTS:ObjectName="Flat File Connection Manager 5">
+      DTS:DTSID="{11427BB1-BEDD-42A8-8E5C-8B1D81ADE045}"
+      DTS:ObjectName="Flat File Connection Manager">
       <DTS:ObjectData>
         <DTS:ConnectionManager
           DTS:Format="Delimited"
@@ -50,7 +38,7 @@
               DTS:DataType="20"
               DTS:TextQualified="True"
               DTS:ObjectName="id"
-              DTS:DTSID="{7391E637-B0D9-43CA-8FA8-220A0B0F1AC4}"
+              DTS:DTSID="{B2EE8F77-2FD8-4E1F-9C59-5BF694E1FE90}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -59,7 +47,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="region"
-              DTS:DTSID="{2CB69A60-C774-444A-9F44-C2A887313CDD}"
+              DTS:DTSID="{70066707-71ED-4A06-AF6B-3790E020C13B}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -67,7 +55,7 @@
               DTS:DataType="20"
               DTS:TextQualified="True"
               DTS:ObjectName="price"
-              DTS:DTSID="{6221C000-9E89-48E2-963C-3C6524B61742}"
+              DTS:DTSID="{B7B7798E-78D3-4A85-B9DA-5B20D094904B}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -76,7 +64,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="type"
-              DTS:DTSID="{78D32E60-DE1B-4129-A453-68B550A44882}"
+              DTS:DTSID="{9CA06696-553D-47E1-B858-FF3968714016}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -84,7 +72,7 @@
               DTS:DataType="20"
               DTS:TextQualified="True"
               DTS:ObjectName="sqfeet"
-              DTS:DTSID="{4FBA6A2B-8171-4DF3-899C-99FC5B63E00E}"
+              DTS:DTSID="{34A51591-60D1-4494-B971-FC4C8D48E06B}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -92,7 +80,7 @@
               DTS:DataType="20"
               DTS:TextQualified="True"
               DTS:ObjectName="beds"
-              DTS:DTSID="{144A1C2D-097B-410E-94B5-FBC0D26BDD2E}"
+              DTS:DTSID="{8DD3A2D1-852B-4B68-9C60-98BBC57A8CD6}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -100,7 +88,7 @@
               DTS:DataType="5"
               DTS:TextQualified="True"
               DTS:ObjectName="baths"
-              DTS:DTSID="{06CB9C9B-9A45-4A79-81B9-7DA1CAF68D72}"
+              DTS:DTSID="{3E753B3F-FF06-47C8-843D-C1731CB5D616}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -108,7 +96,7 @@
               DTS:DataType="11"
               DTS:TextQualified="True"
               DTS:ObjectName="cats_allowed"
-              DTS:DTSID="{E413CC45-6112-4D90-962A-707CEC2723B7}"
+              DTS:DTSID="{5C86BDC0-B3D0-4A8D-9D65-9244E49F9076}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -116,7 +104,7 @@
               DTS:DataType="11"
               DTS:TextQualified="True"
               DTS:ObjectName="dogs_allowed"
-              DTS:DTSID="{B6DF8AF8-2485-47C2-B65F-8F40223A4A07}"
+              DTS:DTSID="{9DCDC540-1272-40B6-9AFB-7FF758E525B8}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -124,7 +112,7 @@
               DTS:DataType="11"
               DTS:TextQualified="True"
               DTS:ObjectName="smoking_allowed"
-              DTS:DTSID="{C4C7125D-68D8-4CBB-9DF6-C7AD1E00B730}"
+              DTS:DTSID="{782D5AD7-22E1-4308-9B34-2B7378444A05}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -132,7 +120,7 @@
               DTS:DataType="11"
               DTS:TextQualified="True"
               DTS:ObjectName="wheelchair_access"
-              DTS:DTSID="{D5B3449A-79E5-43C6-B96D-9EF8E36E16B6}"
+              DTS:DTSID="{5EA78279-4E47-45FA-A568-64534D4A07DA}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -140,7 +128,7 @@
               DTS:DataType="11"
               DTS:TextQualified="True"
               DTS:ObjectName="electric_vehicle_charge"
-              DTS:DTSID="{E45EC164-1DC2-40A5-871B-547DC03A4340}"
+              DTS:DTSID="{1673DDD3-F906-45FE-8E81-5E53039F2FD7}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -148,7 +136,7 @@
               DTS:DataType="11"
               DTS:TextQualified="True"
               DTS:ObjectName="comes_furnished"
-              DTS:DTSID="{A52055C3-776B-4716-A6F0-746AC15B967E}"
+              DTS:DTSID="{98423C23-E4F8-4974-B486-97527F003BFC}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -157,7 +145,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="laundry_options"
-              DTS:DTSID="{FE359F04-5501-498A-BC00-430AC8279115}"
+              DTS:DTSID="{85A93ADE-9712-4BB6-9C51-3A75877AE0FB}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -166,7 +154,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="parking_options"
-              DTS:DTSID="{965CA4D4-3E1F-4135-B907-7778B853E5B2}"
+              DTS:DTSID="{4C6FCCA1-913F-468C-A0B6-20A35B97C788}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -174,7 +162,7 @@
               DTS:DataType="5"
               DTS:TextQualified="True"
               DTS:ObjectName="lat"
-              DTS:DTSID="{7A6EC877-AB08-4ABB-8EBF-0798FEFDE73B}"
+              DTS:DTSID="{B469FA4E-E9E8-4FEE-AD5F-7A132AD44F8F}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -182,7 +170,7 @@
               DTS:DataType="5"
               DTS:TextQualified="True"
               DTS:ObjectName="long"
-              DTS:DTSID="{ABF35791-AD02-4312-9A74-0914AA9DCB1F}"
+              DTS:DTSID="{AD073EEF-3094-4781-B2E0-0092E430349E}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -191,23 +179,35 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="state"
-              DTS:DTSID="{D50A533D-D80A-41F7-8616-E582308B3DE4}"
+              DTS:DTSID="{ADA323CF-BF8B-457A-8508-62F93CFFE3C2}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[LocalHost.USAHousngDB]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{CBCE5215-F728-439F-B6DC-D3387EBED77B}"
+      DTS:ObjectName="LocalHost.USAHousngDB">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=.;Initial Catalog=USAHousngDB;Provider=SQLOLEDB.1;Integrated Security=SSPI;Application Name=SSIS-Package-{CBCE5215-F728-439F-B6DC-D3387EBED77B}LocalHost.USAHousngDB;Auto Translate=False;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
   </DTS:ConnectionManagers>
   <DTS:Variables />
   <DTS:Executables>
     <DTS:Executable
-      DTS:refId="Package\Import CSV"
+      DTS:refId="Package\Data Flow Task"
       DTS:CreationName="Microsoft.Pipeline"
       DTS:Description="Data Flow Task"
-      DTS:DTSID="{F78F7B20-8972-40CB-996D-7BA2B0838D5C}"
+      DTS:DTSID="{274AEDC4-E692-4A9D-8DAF-50EB49079D95}"
       DTS:ExecutableType="Microsoft.Pipeline"
       DTS:LocaleID="-1"
-      DTS:ObjectName="Import CSV"
+      DTS:ObjectName="Data Flow Task"
       DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
       <DTS:Variables />
       <DTS:ObjectData>
@@ -215,7 +215,7 @@
           version="1">
           <components>
             <component
-              refId="Package\Import CSV\Flat File Source"
+              refId="Package\Data Flow Task\Flat File Source"
               componentClassID="Microsoft.FlatFileSource"
               contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
               description="Flat File Source"
@@ -235,23 +235,23 @@
               </properties>
               <connections>
                 <connection
-                  refId="Package\Import CSV\Flat File Source.Connections[FlatFileConnection]"
-                  connectionManagerID="Package.ConnectionManagers[Flat File Connection Manager 5]"
-                  connectionManagerRefId="Package.ConnectionManagers[Flat File Connection Manager 5]"
+                  refId="Package\Data Flow Task\Flat File Source.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Flat File Connection Manager]"
+                  connectionManagerRefId="Package.ConnectionManagers[Flat File Connection Manager]"
                   name="FlatFileConnection" />
               </connections>
               <outputs>
                 <output
-                  refId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output]"
+                  refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output]"
                   name="Flat File Source Output">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].Columns[id]"
+                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[id]"
                       dataType="i8"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[id]"
-                      lineageId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].Columns[id]"
+                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[id]"
+                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[id]"
                       name="id"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -266,14 +266,14 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].Columns[region]"
+                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[region]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[region]"
+                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[region]"
                       length="64"
-                      lineageId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].Columns[region]"
+                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[region]"
                       name="region"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -288,12 +288,12 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].Columns[price]"
+                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[price]"
                       dataType="i8"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[price]"
-                      lineageId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].Columns[price]"
+                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[price]"
+                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[price]"
                       name="price"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -308,14 +308,14 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].Columns[type]"
+                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[type]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[type]"
+                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[type]"
                       length="64"
-                      lineageId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].Columns[type]"
+                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[type]"
                       name="type"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -330,12 +330,12 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].Columns[sqfeet]"
+                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[sqfeet]"
                       dataType="i8"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[sqfeet]"
-                      lineageId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].Columns[sqfeet]"
+                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[sqfeet]"
+                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[sqfeet]"
                       name="sqfeet"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -350,12 +350,12 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].Columns[beds]"
+                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[beds]"
                       dataType="i8"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[beds]"
-                      lineageId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].Columns[beds]"
+                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[beds]"
+                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[beds]"
                       name="beds"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -370,12 +370,12 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].Columns[baths]"
+                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[baths]"
                       dataType="r8"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[baths]"
-                      lineageId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].Columns[baths]"
+                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[baths]"
+                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[baths]"
                       name="baths"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -390,12 +390,12 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].Columns[cats_allowed]"
+                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[cats_allowed]"
                       dataType="bool"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[cats_allowed]"
-                      lineageId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].Columns[cats_allowed]"
+                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[cats_allowed]"
+                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[cats_allowed]"
                       name="cats_allowed"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -410,12 +410,12 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].Columns[dogs_allowed]"
+                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[dogs_allowed]"
                       dataType="bool"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[dogs_allowed]"
-                      lineageId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].Columns[dogs_allowed]"
+                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[dogs_allowed]"
+                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[dogs_allowed]"
                       name="dogs_allowed"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -430,12 +430,12 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].Columns[smoking_allowed]"
+                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[smoking_allowed]"
                       dataType="bool"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[smoking_allowed]"
-                      lineageId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].Columns[smoking_allowed]"
+                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[smoking_allowed]"
+                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[smoking_allowed]"
                       name="smoking_allowed"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -450,12 +450,12 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].Columns[wheelchair_access]"
+                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[wheelchair_access]"
                       dataType="bool"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[wheelchair_access]"
-                      lineageId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].Columns[wheelchair_access]"
+                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[wheelchair_access]"
+                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[wheelchair_access]"
                       name="wheelchair_access"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -470,12 +470,12 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].Columns[electric_vehicle_charge]"
+                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[electric_vehicle_charge]"
                       dataType="bool"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[electric_vehicle_charge]"
-                      lineageId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].Columns[electric_vehicle_charge]"
+                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[electric_vehicle_charge]"
+                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[electric_vehicle_charge]"
                       name="electric_vehicle_charge"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -490,12 +490,12 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].Columns[comes_furnished]"
+                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[comes_furnished]"
                       dataType="bool"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[comes_furnished]"
-                      lineageId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].Columns[comes_furnished]"
+                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[comes_furnished]"
+                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[comes_furnished]"
                       name="comes_furnished"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -510,14 +510,14 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].Columns[laundry_options]"
+                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[laundry_options]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[laundry_options]"
+                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[laundry_options]"
                       length="64"
-                      lineageId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].Columns[laundry_options]"
+                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[laundry_options]"
                       name="laundry_options"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -532,14 +532,14 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].Columns[parking_options]"
+                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[parking_options]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[parking_options]"
+                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[parking_options]"
                       length="64"
-                      lineageId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].Columns[parking_options]"
+                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[parking_options]"
                       name="parking_options"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -554,12 +554,12 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].Columns[lat]"
+                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[lat]"
                       dataType="r8"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[lat]"
-                      lineageId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].Columns[lat]"
+                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[lat]"
+                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[lat]"
                       name="lat"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -574,12 +574,12 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].Columns[long]"
+                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[long]"
                       dataType="r8"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[long]"
-                      lineageId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].Columns[long]"
+                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[long]"
+                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[long]"
                       name="long"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -594,14 +594,14 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].Columns[state]"
+                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[state]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[state]"
+                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[state]"
                       length="64"
-                      lineageId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].Columns[state]"
+                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[state]"
                       name="state"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -619,83 +619,83 @@
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
-                      refId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[id]"
+                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[id]"
                       dataType="i8"
                       name="id" />
                     <externalMetadataColumn
-                      refId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[region]"
+                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[region]"
                       codePage="1252"
                       dataType="str"
                       length="64"
                       name="region" />
                     <externalMetadataColumn
-                      refId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[price]"
+                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[price]"
                       dataType="i8"
                       name="price" />
                     <externalMetadataColumn
-                      refId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[type]"
+                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[type]"
                       codePage="1252"
                       dataType="str"
                       length="64"
                       name="type" />
                     <externalMetadataColumn
-                      refId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[sqfeet]"
+                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[sqfeet]"
                       dataType="i8"
                       name="sqfeet" />
                     <externalMetadataColumn
-                      refId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[beds]"
+                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[beds]"
                       dataType="i8"
                       name="beds" />
                     <externalMetadataColumn
-                      refId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[baths]"
+                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[baths]"
                       dataType="r8"
                       name="baths" />
                     <externalMetadataColumn
-                      refId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[cats_allowed]"
+                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[cats_allowed]"
                       dataType="bool"
                       name="cats_allowed" />
                     <externalMetadataColumn
-                      refId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[dogs_allowed]"
+                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[dogs_allowed]"
                       dataType="bool"
                       name="dogs_allowed" />
                     <externalMetadataColumn
-                      refId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[smoking_allowed]"
+                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[smoking_allowed]"
                       dataType="bool"
                       name="smoking_allowed" />
                     <externalMetadataColumn
-                      refId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[wheelchair_access]"
+                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[wheelchair_access]"
                       dataType="bool"
                       name="wheelchair_access" />
                     <externalMetadataColumn
-                      refId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[electric_vehicle_charge]"
+                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[electric_vehicle_charge]"
                       dataType="bool"
                       name="electric_vehicle_charge" />
                     <externalMetadataColumn
-                      refId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[comes_furnished]"
+                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[comes_furnished]"
                       dataType="bool"
                       name="comes_furnished" />
                     <externalMetadataColumn
-                      refId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[laundry_options]"
+                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[laundry_options]"
                       codePage="1252"
                       dataType="str"
                       length="64"
                       name="laundry_options" />
                     <externalMetadataColumn
-                      refId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[parking_options]"
+                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[parking_options]"
                       codePage="1252"
                       dataType="str"
                       length="64"
                       name="parking_options" />
                     <externalMetadataColumn
-                      refId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[lat]"
+                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[lat]"
                       dataType="r8"
                       name="lat" />
                     <externalMetadataColumn
-                      refId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[long]"
+                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[long]"
                       dataType="r8"
                       name="long" />
                     <externalMetadataColumn
-                      refId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[state]"
+                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[state]"
                       codePage="1252"
                       dataType="str"
                       length="64"
@@ -703,27 +703,27 @@
                   </externalMetadataColumns>
                 </output>
                 <output
-                  refId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Error Output]"
+                  refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Error Output]"
                   isErrorOut="true"
                   name="Flat File Source Error Output">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
-                      codePage="1253"
+                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      codePage="1252"
                       dataType="text"
                       description="Flat File Source Error Output Column"
-                      lineageId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
                       name="Flat File Source Error Output Column" />
                     <outputColumn
-                      refId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
                       dataType="i4"
-                      lineageId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
                       name="ErrorCode"
                       specialFlags="1" />
                     <outputColumn
-                      refId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
                       dataType="i4"
-                      lineageId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
                   </outputColumns>
@@ -732,7 +732,7 @@
               </outputs>
             </component>
             <component
-              refId="Package\Import CSV\SQL Server Destination"
+              refId="Package\Data Flow Task\SQL Server Destination"
               componentClassID="Microsoft.SQLServerDestination"
               contactInfo="SQL Server Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;5"
               description="SQL Server Destination"
@@ -742,7 +742,7 @@
                 <property
                   dataType="System.Int32"
                   description="Specifies the column code page to use when code page information is unavailable from the data source."
-                  name="DefaultCodePage">1253</property>
+                  name="DefaultCodePage">1252</property>
                 <property
                   dataType="System.Boolean"
                   description="Forces the use of the DefaultCodePage property value when describing character data."
@@ -751,7 +751,7 @@
                   dataType="System.String"
                   description="The name of the database object to copy data into."
                   expressionType="Notify"
-                  name="BulkInsertTableName">[dbo].[staging]</property>
+                  name="BulkInsertTableName">[staging]</property>
                 <property
                   dataType="System.Boolean"
                   description="Specifies that any constraints on the destination object are checked during the data copy operation. Corresponds to the bulk insert CHECK_CONSTRAINTS option."
@@ -803,217 +803,217 @@
               </properties>
               <connections>
                 <connection
-                  refId="Package\Import CSV\SQL Server Destination.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[.\SQLEXPRESS.USAHousingDB]"
-                  connectionManagerRefId="Package.ConnectionManagers[.\SQLEXPRESS.USAHousingDB]"
+                  refId="Package\Data Flow Task\SQL Server Destination.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[LocalHost.USAHousngDB]"
+                  connectionManagerRefId="Package.ConnectionManagers[LocalHost.USAHousngDB]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
               <inputs>
                 <input
-                  refId="Package\Import CSV\SQL Server Destination.Inputs[SQL Server Destination Input]"
+                  refId="Package\Data Flow Task\SQL Server Destination.Inputs[SQL Server Destination Input]"
                   hasSideEffects="true"
                   name="SQL Server Destination Input">
                   <inputColumns>
                     <inputColumn
-                      refId="Package\Import CSV\SQL Server Destination.Inputs[SQL Server Destination Input].Columns[id]"
+                      refId="Package\Data Flow Task\SQL Server Destination.Inputs[SQL Server Destination Input].Columns[id]"
                       cachedDataType="i8"
                       cachedName="id"
-                      externalMetadataColumnId="Package\Import CSV\SQL Server Destination.Inputs[SQL Server Destination Input].ExternalColumns[id]"
-                      lineageId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].Columns[id]" />
+                      externalMetadataColumnId="Package\Data Flow Task\SQL Server Destination.Inputs[SQL Server Destination Input].ExternalColumns[id]"
+                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[id]" />
                     <inputColumn
-                      refId="Package\Import CSV\SQL Server Destination.Inputs[SQL Server Destination Input].Columns[region]"
+                      refId="Package\Data Flow Task\SQL Server Destination.Inputs[SQL Server Destination Input].Columns[region]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="64"
                       cachedName="region"
-                      externalMetadataColumnId="Package\Import CSV\SQL Server Destination.Inputs[SQL Server Destination Input].ExternalColumns[region]"
-                      lineageId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].Columns[region]" />
+                      externalMetadataColumnId="Package\Data Flow Task\SQL Server Destination.Inputs[SQL Server Destination Input].ExternalColumns[region]"
+                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[region]" />
                     <inputColumn
-                      refId="Package\Import CSV\SQL Server Destination.Inputs[SQL Server Destination Input].Columns[price]"
+                      refId="Package\Data Flow Task\SQL Server Destination.Inputs[SQL Server Destination Input].Columns[price]"
                       cachedDataType="i8"
                       cachedName="price"
-                      externalMetadataColumnId="Package\Import CSV\SQL Server Destination.Inputs[SQL Server Destination Input].ExternalColumns[price]"
-                      lineageId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].Columns[price]" />
+                      externalMetadataColumnId="Package\Data Flow Task\SQL Server Destination.Inputs[SQL Server Destination Input].ExternalColumns[price]"
+                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[price]" />
                     <inputColumn
-                      refId="Package\Import CSV\SQL Server Destination.Inputs[SQL Server Destination Input].Columns[type]"
+                      refId="Package\Data Flow Task\SQL Server Destination.Inputs[SQL Server Destination Input].Columns[type]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="64"
                       cachedName="type"
-                      externalMetadataColumnId="Package\Import CSV\SQL Server Destination.Inputs[SQL Server Destination Input].ExternalColumns[type]"
-                      lineageId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].Columns[type]" />
+                      externalMetadataColumnId="Package\Data Flow Task\SQL Server Destination.Inputs[SQL Server Destination Input].ExternalColumns[type]"
+                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[type]" />
                     <inputColumn
-                      refId="Package\Import CSV\SQL Server Destination.Inputs[SQL Server Destination Input].Columns[sqfeet]"
+                      refId="Package\Data Flow Task\SQL Server Destination.Inputs[SQL Server Destination Input].Columns[sqfeet]"
                       cachedDataType="i8"
                       cachedName="sqfeet"
-                      externalMetadataColumnId="Package\Import CSV\SQL Server Destination.Inputs[SQL Server Destination Input].ExternalColumns[sqfeet]"
-                      lineageId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].Columns[sqfeet]" />
+                      externalMetadataColumnId="Package\Data Flow Task\SQL Server Destination.Inputs[SQL Server Destination Input].ExternalColumns[sqfeet]"
+                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[sqfeet]" />
                     <inputColumn
-                      refId="Package\Import CSV\SQL Server Destination.Inputs[SQL Server Destination Input].Columns[beds]"
+                      refId="Package\Data Flow Task\SQL Server Destination.Inputs[SQL Server Destination Input].Columns[beds]"
                       cachedDataType="i8"
                       cachedName="beds"
-                      externalMetadataColumnId="Package\Import CSV\SQL Server Destination.Inputs[SQL Server Destination Input].ExternalColumns[beds]"
-                      lineageId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].Columns[beds]" />
+                      externalMetadataColumnId="Package\Data Flow Task\SQL Server Destination.Inputs[SQL Server Destination Input].ExternalColumns[beds]"
+                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[beds]" />
                     <inputColumn
-                      refId="Package\Import CSV\SQL Server Destination.Inputs[SQL Server Destination Input].Columns[baths]"
+                      refId="Package\Data Flow Task\SQL Server Destination.Inputs[SQL Server Destination Input].Columns[baths]"
                       cachedDataType="r8"
                       cachedName="baths"
-                      externalMetadataColumnId="Package\Import CSV\SQL Server Destination.Inputs[SQL Server Destination Input].ExternalColumns[baths]"
-                      lineageId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].Columns[baths]" />
+                      externalMetadataColumnId="Package\Data Flow Task\SQL Server Destination.Inputs[SQL Server Destination Input].ExternalColumns[baths]"
+                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[baths]" />
                     <inputColumn
-                      refId="Package\Import CSV\SQL Server Destination.Inputs[SQL Server Destination Input].Columns[cats_allowed]"
+                      refId="Package\Data Flow Task\SQL Server Destination.Inputs[SQL Server Destination Input].Columns[cats_allowed]"
                       cachedDataType="bool"
                       cachedName="cats_allowed"
-                      externalMetadataColumnId="Package\Import CSV\SQL Server Destination.Inputs[SQL Server Destination Input].ExternalColumns[cats_allowed]"
-                      lineageId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].Columns[cats_allowed]" />
+                      externalMetadataColumnId="Package\Data Flow Task\SQL Server Destination.Inputs[SQL Server Destination Input].ExternalColumns[cats_allowed]"
+                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[cats_allowed]" />
                     <inputColumn
-                      refId="Package\Import CSV\SQL Server Destination.Inputs[SQL Server Destination Input].Columns[dogs_allowed]"
+                      refId="Package\Data Flow Task\SQL Server Destination.Inputs[SQL Server Destination Input].Columns[dogs_allowed]"
                       cachedDataType="bool"
                       cachedName="dogs_allowed"
-                      externalMetadataColumnId="Package\Import CSV\SQL Server Destination.Inputs[SQL Server Destination Input].ExternalColumns[dogs_allowed]"
-                      lineageId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].Columns[dogs_allowed]" />
+                      externalMetadataColumnId="Package\Data Flow Task\SQL Server Destination.Inputs[SQL Server Destination Input].ExternalColumns[dogs_allowed]"
+                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[dogs_allowed]" />
                     <inputColumn
-                      refId="Package\Import CSV\SQL Server Destination.Inputs[SQL Server Destination Input].Columns[smoking_allowed]"
+                      refId="Package\Data Flow Task\SQL Server Destination.Inputs[SQL Server Destination Input].Columns[smoking_allowed]"
                       cachedDataType="bool"
                       cachedName="smoking_allowed"
-                      externalMetadataColumnId="Package\Import CSV\SQL Server Destination.Inputs[SQL Server Destination Input].ExternalColumns[smoking_allowed]"
-                      lineageId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].Columns[smoking_allowed]" />
+                      externalMetadataColumnId="Package\Data Flow Task\SQL Server Destination.Inputs[SQL Server Destination Input].ExternalColumns[smoking_allowed]"
+                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[smoking_allowed]" />
                     <inputColumn
-                      refId="Package\Import CSV\SQL Server Destination.Inputs[SQL Server Destination Input].Columns[wheelchair_access]"
+                      refId="Package\Data Flow Task\SQL Server Destination.Inputs[SQL Server Destination Input].Columns[wheelchair_access]"
                       cachedDataType="bool"
                       cachedName="wheelchair_access"
-                      externalMetadataColumnId="Package\Import CSV\SQL Server Destination.Inputs[SQL Server Destination Input].ExternalColumns[wheelchair_access]"
-                      lineageId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].Columns[wheelchair_access]" />
+                      externalMetadataColumnId="Package\Data Flow Task\SQL Server Destination.Inputs[SQL Server Destination Input].ExternalColumns[wheelchair_access]"
+                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[wheelchair_access]" />
                     <inputColumn
-                      refId="Package\Import CSV\SQL Server Destination.Inputs[SQL Server Destination Input].Columns[electric_vehicle_charge]"
+                      refId="Package\Data Flow Task\SQL Server Destination.Inputs[SQL Server Destination Input].Columns[electric_vehicle_charge]"
                       cachedDataType="bool"
                       cachedName="electric_vehicle_charge"
-                      externalMetadataColumnId="Package\Import CSV\SQL Server Destination.Inputs[SQL Server Destination Input].ExternalColumns[electric_vehicle_charge]"
-                      lineageId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].Columns[electric_vehicle_charge]" />
+                      externalMetadataColumnId="Package\Data Flow Task\SQL Server Destination.Inputs[SQL Server Destination Input].ExternalColumns[electric_vehicle_charge]"
+                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[electric_vehicle_charge]" />
                     <inputColumn
-                      refId="Package\Import CSV\SQL Server Destination.Inputs[SQL Server Destination Input].Columns[comes_furnished]"
+                      refId="Package\Data Flow Task\SQL Server Destination.Inputs[SQL Server Destination Input].Columns[comes_furnished]"
                       cachedDataType="bool"
                       cachedName="comes_furnished"
-                      externalMetadataColumnId="Package\Import CSV\SQL Server Destination.Inputs[SQL Server Destination Input].ExternalColumns[comes_furnished]"
-                      lineageId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].Columns[comes_furnished]" />
+                      externalMetadataColumnId="Package\Data Flow Task\SQL Server Destination.Inputs[SQL Server Destination Input].ExternalColumns[comes_furnished]"
+                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[comes_furnished]" />
                     <inputColumn
-                      refId="Package\Import CSV\SQL Server Destination.Inputs[SQL Server Destination Input].Columns[laundry_options]"
+                      refId="Package\Data Flow Task\SQL Server Destination.Inputs[SQL Server Destination Input].Columns[laundry_options]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="64"
                       cachedName="laundry_options"
-                      externalMetadataColumnId="Package\Import CSV\SQL Server Destination.Inputs[SQL Server Destination Input].ExternalColumns[laundry_options]"
-                      lineageId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].Columns[laundry_options]" />
+                      externalMetadataColumnId="Package\Data Flow Task\SQL Server Destination.Inputs[SQL Server Destination Input].ExternalColumns[laundry_options]"
+                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[laundry_options]" />
                     <inputColumn
-                      refId="Package\Import CSV\SQL Server Destination.Inputs[SQL Server Destination Input].Columns[parking_options]"
+                      refId="Package\Data Flow Task\SQL Server Destination.Inputs[SQL Server Destination Input].Columns[parking_options]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="64"
                       cachedName="parking_options"
-                      externalMetadataColumnId="Package\Import CSV\SQL Server Destination.Inputs[SQL Server Destination Input].ExternalColumns[parking_options]"
-                      lineageId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].Columns[parking_options]" />
+                      externalMetadataColumnId="Package\Data Flow Task\SQL Server Destination.Inputs[SQL Server Destination Input].ExternalColumns[parking_options]"
+                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[parking_options]" />
                     <inputColumn
-                      refId="Package\Import CSV\SQL Server Destination.Inputs[SQL Server Destination Input].Columns[lat]"
+                      refId="Package\Data Flow Task\SQL Server Destination.Inputs[SQL Server Destination Input].Columns[lat]"
                       cachedDataType="r8"
                       cachedName="lat"
-                      externalMetadataColumnId="Package\Import CSV\SQL Server Destination.Inputs[SQL Server Destination Input].ExternalColumns[lat]"
-                      lineageId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].Columns[lat]" />
+                      externalMetadataColumnId="Package\Data Flow Task\SQL Server Destination.Inputs[SQL Server Destination Input].ExternalColumns[lat]"
+                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[lat]" />
                     <inputColumn
-                      refId="Package\Import CSV\SQL Server Destination.Inputs[SQL Server Destination Input].Columns[long]"
+                      refId="Package\Data Flow Task\SQL Server Destination.Inputs[SQL Server Destination Input].Columns[long]"
                       cachedDataType="r8"
                       cachedName="long"
-                      externalMetadataColumnId="Package\Import CSV\SQL Server Destination.Inputs[SQL Server Destination Input].ExternalColumns[long]"
-                      lineageId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].Columns[long]" />
+                      externalMetadataColumnId="Package\Data Flow Task\SQL Server Destination.Inputs[SQL Server Destination Input].ExternalColumns[long]"
+                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[long]" />
                     <inputColumn
-                      refId="Package\Import CSV\SQL Server Destination.Inputs[SQL Server Destination Input].Columns[state]"
+                      refId="Package\Data Flow Task\SQL Server Destination.Inputs[SQL Server Destination Input].Columns[state]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="64"
                       cachedName="state"
-                      externalMetadataColumnId="Package\Import CSV\SQL Server Destination.Inputs[SQL Server Destination Input].ExternalColumns[state]"
-                      lineageId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output].Columns[state]" />
+                      externalMetadataColumnId="Package\Data Flow Task\SQL Server Destination.Inputs[SQL Server Destination Input].ExternalColumns[state]"
+                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[state]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
-                      refId="Package\Import CSV\SQL Server Destination.Inputs[SQL Server Destination Input].ExternalColumns[id]"
+                      refId="Package\Data Flow Task\SQL Server Destination.Inputs[SQL Server Destination Input].ExternalColumns[id]"
                       dataType="i8"
                       name="id" />
                     <externalMetadataColumn
-                      refId="Package\Import CSV\SQL Server Destination.Inputs[SQL Server Destination Input].ExternalColumns[region]"
+                      refId="Package\Data Flow Task\SQL Server Destination.Inputs[SQL Server Destination Input].ExternalColumns[region]"
                       codePage="1252"
                       dataType="str"
                       length="64"
                       name="region" />
                     <externalMetadataColumn
-                      refId="Package\Import CSV\SQL Server Destination.Inputs[SQL Server Destination Input].ExternalColumns[price]"
+                      refId="Package\Data Flow Task\SQL Server Destination.Inputs[SQL Server Destination Input].ExternalColumns[price]"
                       dataType="i8"
                       name="price" />
                     <externalMetadataColumn
-                      refId="Package\Import CSV\SQL Server Destination.Inputs[SQL Server Destination Input].ExternalColumns[type]"
+                      refId="Package\Data Flow Task\SQL Server Destination.Inputs[SQL Server Destination Input].ExternalColumns[type]"
                       codePage="1252"
                       dataType="str"
                       length="64"
                       name="type" />
                     <externalMetadataColumn
-                      refId="Package\Import CSV\SQL Server Destination.Inputs[SQL Server Destination Input].ExternalColumns[sqfeet]"
+                      refId="Package\Data Flow Task\SQL Server Destination.Inputs[SQL Server Destination Input].ExternalColumns[sqfeet]"
                       dataType="i8"
                       name="sqfeet" />
                     <externalMetadataColumn
-                      refId="Package\Import CSV\SQL Server Destination.Inputs[SQL Server Destination Input].ExternalColumns[beds]"
+                      refId="Package\Data Flow Task\SQL Server Destination.Inputs[SQL Server Destination Input].ExternalColumns[beds]"
                       dataType="i8"
                       name="beds" />
                     <externalMetadataColumn
-                      refId="Package\Import CSV\SQL Server Destination.Inputs[SQL Server Destination Input].ExternalColumns[baths]"
+                      refId="Package\Data Flow Task\SQL Server Destination.Inputs[SQL Server Destination Input].ExternalColumns[baths]"
                       dataType="r8"
                       name="baths" />
                     <externalMetadataColumn
-                      refId="Package\Import CSV\SQL Server Destination.Inputs[SQL Server Destination Input].ExternalColumns[cats_allowed]"
+                      refId="Package\Data Flow Task\SQL Server Destination.Inputs[SQL Server Destination Input].ExternalColumns[cats_allowed]"
                       dataType="bool"
                       name="cats_allowed" />
                     <externalMetadataColumn
-                      refId="Package\Import CSV\SQL Server Destination.Inputs[SQL Server Destination Input].ExternalColumns[dogs_allowed]"
+                      refId="Package\Data Flow Task\SQL Server Destination.Inputs[SQL Server Destination Input].ExternalColumns[dogs_allowed]"
                       dataType="bool"
                       name="dogs_allowed" />
                     <externalMetadataColumn
-                      refId="Package\Import CSV\SQL Server Destination.Inputs[SQL Server Destination Input].ExternalColumns[smoking_allowed]"
+                      refId="Package\Data Flow Task\SQL Server Destination.Inputs[SQL Server Destination Input].ExternalColumns[smoking_allowed]"
                       dataType="bool"
                       name="smoking_allowed" />
                     <externalMetadataColumn
-                      refId="Package\Import CSV\SQL Server Destination.Inputs[SQL Server Destination Input].ExternalColumns[wheelchair_access]"
+                      refId="Package\Data Flow Task\SQL Server Destination.Inputs[SQL Server Destination Input].ExternalColumns[wheelchair_access]"
                       dataType="bool"
                       name="wheelchair_access" />
                     <externalMetadataColumn
-                      refId="Package\Import CSV\SQL Server Destination.Inputs[SQL Server Destination Input].ExternalColumns[electric_vehicle_charge]"
+                      refId="Package\Data Flow Task\SQL Server Destination.Inputs[SQL Server Destination Input].ExternalColumns[electric_vehicle_charge]"
                       dataType="bool"
                       name="electric_vehicle_charge" />
                     <externalMetadataColumn
-                      refId="Package\Import CSV\SQL Server Destination.Inputs[SQL Server Destination Input].ExternalColumns[comes_furnished]"
+                      refId="Package\Data Flow Task\SQL Server Destination.Inputs[SQL Server Destination Input].ExternalColumns[comes_furnished]"
                       dataType="bool"
                       name="comes_furnished" />
                     <externalMetadataColumn
-                      refId="Package\Import CSV\SQL Server Destination.Inputs[SQL Server Destination Input].ExternalColumns[laundry_options]"
+                      refId="Package\Data Flow Task\SQL Server Destination.Inputs[SQL Server Destination Input].ExternalColumns[laundry_options]"
                       codePage="1252"
                       dataType="str"
                       length="64"
                       name="laundry_options" />
                     <externalMetadataColumn
-                      refId="Package\Import CSV\SQL Server Destination.Inputs[SQL Server Destination Input].ExternalColumns[parking_options]"
+                      refId="Package\Data Flow Task\SQL Server Destination.Inputs[SQL Server Destination Input].ExternalColumns[parking_options]"
                       codePage="1252"
                       dataType="str"
                       length="64"
                       name="parking_options" />
                     <externalMetadataColumn
-                      refId="Package\Import CSV\SQL Server Destination.Inputs[SQL Server Destination Input].ExternalColumns[lat]"
+                      refId="Package\Data Flow Task\SQL Server Destination.Inputs[SQL Server Destination Input].ExternalColumns[lat]"
                       dataType="r8"
                       name="lat" />
                     <externalMetadataColumn
-                      refId="Package\Import CSV\SQL Server Destination.Inputs[SQL Server Destination Input].ExternalColumns[long]"
+                      refId="Package\Data Flow Task\SQL Server Destination.Inputs[SQL Server Destination Input].ExternalColumns[long]"
                       dataType="r8"
                       name="long" />
                     <externalMetadataColumn
-                      refId="Package\Import CSV\SQL Server Destination.Inputs[SQL Server Destination Input].ExternalColumns[state]"
+                      refId="Package\Data Flow Task\SQL Server Destination.Inputs[SQL Server Destination Input].ExternalColumns[state]"
                       codePage="1252"
                       dataType="str"
                       length="64"
@@ -1025,10 +1025,10 @@
           </components>
           <paths>
             <path
-              refId="Package\Import CSV.Paths[Flat File Source Output]"
-              endId="Package\Import CSV\SQL Server Destination.Inputs[SQL Server Destination Input]"
+              refId="Package\Data Flow Task.Paths[Flat File Source Output]"
+              endId="Package\Data Flow Task\SQL Server Destination.Inputs[SQL Server Destination Input]"
               name="Flat File Source Output"
-              startId="Package\Import CSV\Flat File Source.Outputs[Flat File Source Output]" />
+              startId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output]" />
           </paths>
         </pipeline>
       </DTS:ObjectData>
@@ -1037,7 +1037,7 @@
       DTS:refId="Package\Truncate Tables"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description="Execute SQL Task"
-      DTS:DTSID="{E1D78E47-D6BD-4070-A190-B5D2921839F2}"
+      DTS:DTSID="{4B3058F4-4A30-45D5-95BC-BD30C561EE8C}"
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
       DTS:ObjectName="Truncate Tables"
@@ -1046,24 +1046,24 @@
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
-          SQLTask:Connection="{B1597079-CAAE-4D62-83DF-AC11F3C303DB}"
-          SQLTask:SqlStatementSource="TRUNCATE TABLE [USAHousingDB].[dbo].[staging];&#xA;TRUNCATE TABLE [USAHousingDB].[dbo].[listings_fact];" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+          SQLTask:Connection="{CBCE5215-F728-439F-B6DC-D3387EBED77B}"
+          SQLTask:SqlStatementSource="TRUNCATE TABLE staging;&#xA;TRUNCATE TABLE listings_fact;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
     <DTS:Executable
-      DTS:refId="Package\Update Amenities Dimension"
+      DTS:refId="Package\Update Amenities Table"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description="Execute SQL Task"
-      DTS:DTSID="{5A690D2C-0D77-4187-8C55-239EE740C0DB}"
+      DTS:DTSID="{5E1A8DF5-9AA4-4A49-864D-23E5E3EE2A8F}"
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
-      DTS:ObjectName="Update Amenities Dimension"
+      DTS:ObjectName="Update Amenities Table"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="0">
+      DTS:ThreadHint="2">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
-          SQLTask:Connection="{B1597079-CAAE-4D62-83DF-AC11F3C303DB}"
+          SQLTask:Connection="{CBCE5215-F728-439F-B6DC-D3387EBED77B}"
           SQLTask:SqlStatementSource="INSERT INTO amenities_dim (cats_allowed, dogs_allowed, smoking_allowed, wheelchair_access, electric_vehicle_charge, comes_furnished, laundry_options, parking_options)&#xA;SELECT DISTINCT cats_allowed, dogs_allowed, smoking_allowed, wheelchair_access, electric_vehicle_charge, comes_furnished, laundry_options, parking_options&#xA;FROM staging&#xA;WHERE NOT EXISTS (SELECT *&#xA;FROM  amenities_dim &#xA;WHERE cats_allowed= cats_allowed&#xA;AND  dogs_allowed=  dogs_allowed&#xA;AND  wheelchair_access =  wheelchair_access&#xA;AND electric_vehicle_charge = electric_vehicle_charge&#xA;AND comes_furnished = comes_furnished&#xA;AND laundry_options = laundry_options&#xA;AND parking_options=  parking_options);" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
@@ -1071,7 +1071,7 @@
       DTS:refId="Package\Update Fact Table"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description="Execute SQL Task"
-      DTS:DTSID="{8E0DA8B5-71C5-467F-ACE2-963C29D3FDA2}"
+      DTS:DTSID="{144BAB95-6340-4CEE-AFB3-30B4342295A2}"
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
       DTS:ObjectName="Update Fact Table"
@@ -1080,42 +1080,42 @@
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
-          SQLTask:Connection="{B1597079-CAAE-4D62-83DF-AC11F3C303DB}"
-          SQLTask:SqlStatementSource="INSERT INTO listings_fact (listing_id, location, property, amenities, lat, long, sqfeet, price)&#xA;SELECT &#xA;    staging.id,&#xA;    location_dim.location_id AS location,&#xA;    property_dim.property_id AS property,&#xA;    amenities_dim.amenity_id AS amenities,&#xA;    staging.lat,&#xA;    staging.long,&#xA;    staging.sqfeet,&#xA;    staging.price&#xA;FROM &#xA;    staging&#xA;INNER JOIN &#xA;    location_dim ON staging.region = location_dim.region AND staging.state = location_dim.state&#xA;INNER JOIN &#xA;    property_dim ON staging.type = property_dim.type AND staging.beds = property_dim.beds AND staging.baths = property_dim.baths&#xA;INNER JOIN &#xA;    amenities_dim ON staging.cats_allowed = amenities_dim.cats_allowed AND staging.dogs_allowed = amenities_dim.dogs_allowed AND staging.smoking_allowed = amenities_dim.smoking_allowed AND staging.wheelchair_access = amenities_dim.wheelchair_access AND staging.electric_vehicle_charge = amenities_dim.electric_vehicle_charge AND staging.comes_furnished = amenities_dim.comes_furnished AND staging.laundry_options = amenities_dim.laundry_options AND staging.parking_options = amenities_dim.parking_options;&#xA;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+          SQLTask:Connection="{CBCE5215-F728-439F-B6DC-D3387EBED77B}"
+          SQLTask:SqlStatementSource="INSERT INTO listings_fact (listing_id, location, property, amenities, sqfeet, price)&#xA;SELECT &#xA;    staging.id,&#xA;    location_dim.location_id AS location,&#xA;    property_dim.property_id AS property,&#xA;    amenities_dim.amenities_id AS amenities,&#xA;    staging.sqfeet,&#xA;    staging.price&#xA;FROM &#xA;    staging&#xA;INNER JOIN &#xA;    location_dim ON staging.region = location_dim.region AND staging.state = location_dim.state AND staging.lat = location_dim.lat AND staging.long = location_dim.long&#xA;INNER JOIN &#xA;    property_dim ON staging.type = property_dim.type AND staging.beds = property_dim.beds AND staging.baths = property_dim.baths&#xA;INNER JOIN &#xA;    amenities_dim ON staging.cats_allowed = amenities_dim.cats_allowed AND staging.dogs_allowed = amenities_dim.dogs_allowed AND staging.smoking_allowed = amenities_dim.smoking_allowed AND staging.wheelchair_access = amenities_dim.wheelchair_access AND staging.electric_vehicle_charge = amenities_dim.electric_vehicle_charge AND staging.comes_furnished = amenities_dim.comes_furnished AND staging.laundry_options = amenities_dim.laundry_options AND staging.parking_options = amenities_dim.parking_options;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
     <DTS:Executable
       DTS:refId="Package\Update Location Dimension"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description="Execute SQL Task"
-      DTS:DTSID="{043AD358-BB6F-4E0B-A088-83C0D3ADEE39}"
+      DTS:DTSID="{7A0D8CF3-AD92-47DB-A86F-D11B90712D86}"
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
       DTS:ObjectName="Update Location Dimension"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="1">
+      DTS:ThreadHint="0">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
-          SQLTask:Connection="{B1597079-CAAE-4D62-83DF-AC11F3C303DB}"
-          SQLTask:SqlStatementSource="INSERT INTO location_dim (region, state)&#xA;SELECT DISTINCT region, state&#xA;FROM staging&#xA;WHERE NOT EXISTS (SELECT *&#xA;FROM  location_dim  &#xA;WHERE region= region &#xA;AND state= state);&#xA;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+          SQLTask:Connection="{CBCE5215-F728-439F-B6DC-D3387EBED77B}"
+          SQLTask:SqlStatementSource="INSERT INTO location_dim (region, state, lat, long)&#xA;&#xA;SELECT DISTINCT region, state, lat, long&#xA;&#xA;FROM staging&#xA;&#xA;WHERE NOT EXISTS (SELECT *&#xA;FROM  location_dim  &#xA;WHERE region= region &#xA;AND state= state&#xA;AND lat = lat&#xA;AND long = long);" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
     <DTS:Executable
       DTS:refId="Package\Update Property Dimension"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description="Execute SQL Task"
-      DTS:DTSID="{3E661220-3AA7-4470-A361-B8F8CD6035DB}"
+      DTS:DTSID="{A42DF3E1-E26F-4E2D-A401-C580E366D74A}"
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
       DTS:ObjectName="Update Property Dimension"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="2">
+      DTS:ThreadHint="1">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
-          SQLTask:Connection="{B1597079-CAAE-4D62-83DF-AC11F3C303DB}"
-          SQLTask:SqlStatementSource="INSERT INTO property_dim (type, beds, baths)&#xA;SELECT DISTINCT type, beds, baths&#xA;FROM staging&#xA;WHERE NOT EXISTS (SELECT *&#xA;FROM  property_dim &#xA;WHERE type= type&#xA;AND beds= beds&#xA;AND baths=baths);" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+          SQLTask:Connection="{CBCE5215-F728-439F-B6DC-D3387EBED77B}"
+          SQLTask:SqlStatementSource="INSERT INTO property_dim (type, beds, baths)&#xA;&#xA;SELECT DISTINCT type, beds, baths&#xA;&#xA;FROM staging&#xA;&#xA;WHERE NOT EXISTS (SELECT *&#xA;FROM  property_dim &#xA;WHERE type= type&#xA;AND beds= beds&#xA;AND baths=baths)" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
   </DTS:Executables>
@@ -1123,39 +1123,39 @@
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint]"
       DTS:CreationName=""
-      DTS:DTSID="{5E183599-1D6D-4927-B148-97164EE458C7}"
+      DTS:DTSID="{CCEBB5D5-7340-44E8-905A-4665790D62C5}"
       DTS:From="Package\Truncate Tables"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint"
-      DTS:To="Package\Import CSV" />
+      DTS:To="Package\Data Flow Task" />
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint 1]"
       DTS:CreationName=""
-      DTS:DTSID="{694B598A-0EA5-4E8C-8852-74D6FDBC7FD1}"
-      DTS:From="Package\Import CSV"
+      DTS:DTSID="{EAC80A6B-962A-4D83-BB9C-C09CC656684C}"
+      DTS:From="Package\Data Flow Task"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint 1"
-      DTS:To="Package\Update Property Dimension" />
+      DTS:To="Package\Update Location Dimension" />
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint 2]"
       DTS:CreationName=""
-      DTS:DTSID="{C7E5A937-7A84-486A-B682-452D8E2BA571}"
-      DTS:From="Package\Import CSV"
+      DTS:DTSID="{86568DD8-47C0-494C-9BD9-2E8B220A1A8F}"
+      DTS:From="Package\Data Flow Task"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint 2"
-      DTS:To="Package\Update Location Dimension" />
+      DTS:To="Package\Update Property Dimension" />
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint 3]"
       DTS:CreationName=""
-      DTS:DTSID="{C394A5FF-2D7F-4C2E-834B-72D5CAAEA7B4}"
-      DTS:From="Package\Import CSV"
+      DTS:DTSID="{FFA55904-FC70-4765-85C6-85288063EF5E}"
+      DTS:From="Package\Data Flow Task"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint 3"
-      DTS:To="Package\Update Amenities Dimension" />
+      DTS:To="Package\Update Amenities Table" />
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint 4]"
       DTS:CreationName=""
-      DTS:DTSID="{AC154C5F-7B3C-4872-A9C4-63E8695229B3}"
+      DTS:DTSID="{59294CE2-D4B5-4B35-A69F-C6677388041A}"
       DTS:From="Package\Update Location Dimension"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint 4"
@@ -1163,7 +1163,7 @@
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint 5]"
       DTS:CreationName=""
-      DTS:DTSID="{034E6F9A-D3B4-493F-9A32-7BF13918183C}"
+      DTS:DTSID="{53666980-4229-4314-8285-6DF3A3EE0969}"
       DTS:From="Package\Update Property Dimension"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint 5"
@@ -1171,8 +1171,8 @@
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint 6]"
       DTS:CreationName=""
-      DTS:DTSID="{0727F6D8-EAB9-46CD-8F0B-4EDEAAA7D9C7}"
-      DTS:From="Package\Update Amenities Dimension"
+      DTS:DTSID="{0F614812-06EA-40BC-9F96-1B530D1CED87}"
+      DTS:From="Package\Update Amenities Table"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint 6"
       DTS:To="Package\Update Fact Table" />
@@ -1190,39 +1190,43 @@
       <GraphLayout
         Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="132,41.6"
-          Id="Package\Import CSV"
-          TopLeft="267.166652369831,208.299998589754" />
+          Size="150.4,41.6"
+          Id="Package\Data Flow Task"
+          TopLeft="261.928571974441,142.382352821194" />
         <NodeLayout
-          Size="156,41.6"
+          Size="162.4,41.6"
           Id="Package\Truncate Tables"
-          TopLeft="39.1666645266944,207.999998553594" />
+          TopLeft="16.9285713890377,143.323529317253" />
         <NodeLayout
-          Size="198.4,41.6"
-          Id="Package\Update Amenities Dimension"
-          TopLeft="522.999973364176,327.566664635672" />
+          Size="205.6,41.6"
+          Id="Package\Update Amenities Table"
+          TopLeft="478.750001019133,231.13235273858" />
         <NodeLayout
-          Size="206.4,41.6"
+          Size="162.4,41.6"
+          Id="Package\Update Fact Table"
+          TopLeft="796.250001695007,141.47058811129" />
+        <NodeLayout
+          Size="207.2,41.6"
           Id="Package\Update Location Dimension"
-          TopLeft="520.499971861642,101.699999331037" />
+          TopLeft="481.428572453406,39.7647058474976" />
         <NodeLayout
-          Size="206.4,41.6"
+          Size="207.2,41.6"
           Id="Package\Update Property Dimension"
-          TopLeft="522.791638403097,204.833331947194" />
+          TopLeft="475.714286726957,139.176470466242" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint]"
-          TopLeft="195.166664526694,228.949998571674">
+          TopLeft="179.328571389038,163.652941069224">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="71.9999878431366,0"
+              EndConnector="82.6000005854028,0"
               Start="0,0"
-              End="64.4999878431366,0">
+              End="75.1000005854028,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="64.4999878431366,0" />
+                    End="75.1000005854028,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -1233,52 +1237,30 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 1]"
-          TopLeft="399.166652369831,227.366665268474">
+          TopLeft="337.128571974441,142.382352821194">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="123.624986033266,0"
+              EndConnector="247.900000478966,-61.0176469736961"
               Start="0,0"
-              End="116.124986033266,0">
+              End="247.900000478966,-53.5176469736961">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="116.124986033266,0" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package.PrecedenceConstraints[Constraint 3]"
-          TopLeft="333.166652369831,249.899998589754">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="289.033320994345,77.6666660459179"
-              Start="0,0"
-              End="289.033320994345,70.1666660459179">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,34.833333022959" />
+                    End="0,-26.5088234868481" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,34.833333022959"
-                    Point2="0,38.833333022959"
-                    Point3="4,38.833333022959" />
+                    Point1="0,-26.5088234868481"
+                    Point2="0,-30.5088234868481"
+                    Point3="4,-30.5088234868481" />
                   <mssgle:LineSegment
-                    End="285.033320994345,38.833333022959" />
+                    End="243.900000478966,-30.5088234868481" />
                   <mssgle:CubicBezierSegment
-                    Point1="285.033320994345,38.833333022959"
-                    Point2="289.033320994345,38.833333022959"
-                    Point3="289.033320994345,42.833333022959" />
+                    Point1="243.900000478966,-30.5088234868481"
+                    Point2="247.900000478966,-30.5088234868481"
+                    Point3="247.900000478966,-34.5088234868481" />
                   <mssgle:LineSegment
-                    End="289.033320994345,70.1666660459179" />
+                    End="247.900000478966,-53.5176469736961" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -1289,30 +1271,18 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 2]"
-          TopLeft="333.166652369831,208.299998589754">
+          TopLeft="412.328571974441,161.579411643718">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="290.533319491811,-64.9999992587168"
+              EndConnector="63.385714752516,0"
               Start="0,0"
-              End="290.533319491811,-57.4999992587168">
+              End="55.885714752516,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,-28.4999996293584" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,-28.4999996293584"
-                    Point2="0,-32.4999996293584"
-                    Point3="4,-32.4999996293584" />
-                  <mssgle:LineSegment
-                    End="286.533319491811,-32.4999996293584" />
-                  <mssgle:CubicBezierSegment
-                    Point1="286.533319491811,-32.4999996293584"
-                    Point2="290.533319491811,-32.4999996293584"
-                    Point3="290.533319491811,-36.4999996293584" />
-                  <mssgle:LineSegment
-                    End="290.533319491811,-57.4999992587168" />
+                    End="55.885714752516,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -1321,36 +1291,66 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="164.8,41.6"
-          Id="Package\Update Fact Table"
-          TopLeft="877.999952328704,203.099998625914" />
         <EdgeLayout
-          Id="Package.PrecedenceConstraints[Constraint 4]"
-          TopLeft="656.766638528309,143.299999331037">
+          Id="Package.PrecedenceConstraints[Constraint 3]"
+          TopLeft="337.128571974441,183.982352821194">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="303.633313800395,59.799999294877"
+              EndConnector="244.421429044693,47.1499999173862"
               Start="0,0"
-              End="303.633313800395,52.299999294877">
+              End="244.421429044693,39.6499999173862">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,20.1959997146964" />
+                    End="0,19.5749999586931" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,20.1959997146964"
-                    Point2="0,24.1959997146964"
-                    Point3="4,24.1959997146964" />
+                    Point1="0,19.5749999586931"
+                    Point2="0,23.5749999586931"
+                    Point3="4,23.5749999586931" />
                   <mssgle:LineSegment
-                    End="299.633313800395,24.1959997146964" />
+                    End="240.421429044693,23.5749999586931" />
                   <mssgle:CubicBezierSegment
-                    Point1="299.633313800395,24.1959997146964"
-                    Point2="303.633313800395,24.1959997146964"
-                    Point3="303.633313800395,28.1959997146964" />
+                    Point1="240.421429044693,23.5749999586931"
+                    Point2="244.421429044693,23.5749999586931"
+                    Point3="244.421429044693,27.5749999586931" />
                   <mssgle:LineSegment
-                    End="303.633313800395,52.299999294877" />
+                    End="244.421429044693,39.6499999173862" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 4]"
+          TopLeft="618.228572453406,81.3647058474976">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="259.221429241601,60.1058822637924"
+              Start="0,0"
+              End="259.221429241601,52.6058822637924">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,20.3187017894884" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,20.3187017894884"
+                    Point2="0,24.3187017894884"
+                    Point3="4,24.3187017894884" />
+                  <mssgle:LineSegment
+                    End="255.221429241601,24.3187017894884" />
+                  <mssgle:CubicBezierSegment
+                    Point1="255.221429241601,24.3187017894884"
+                    Point2="259.221429241601,24.3187017894884"
+                    Point3="259.221429241601,28.3187017894884" />
+                  <mssgle:LineSegment
+                    End="259.221429241601,52.6058822637924" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -1361,18 +1361,18 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 5]"
-          TopLeft="729.191638403097,224.766665286554">
+          TopLeft="682.914286726957,161.123529288766">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="148.808313925607,0"
+              EndConnector="113.33571496805,0"
               Start="0,0"
-              End="141.308313925607,0">
+              End="105.83571496805,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="141.308313925607,0" />
+                    End="105.83571496805,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -1383,30 +1383,30 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 6]"
-          TopLeft="653.933306697509,327.566664635672">
+          TopLeft="614.483334352466,231.13235273858">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="306.466645631195,-82.8666660097577"
+              EndConnector="262.966667342541,-48.06176462729"
               Start="0,0"
-              End="306.466645631195,-75.3666660097577">
+              End="262.966667342541,-40.56176462729">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,-29.5444264007499" />
+                    End="0,-15.4473858414672" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,-29.5444264007499"
-                    Point2="0,-33.5444264007499"
-                    Point3="4,-33.5444264007499" />
+                    Point1="0,-15.4473858414672"
+                    Point2="0,-19.4473858414672"
+                    Point3="4,-19.4473858414672" />
                   <mssgle:LineSegment
-                    End="302.466645631195,-33.5444264007499" />
+                    End="258.966667342541,-19.4473858414672" />
                   <mssgle:CubicBezierSegment
-                    Point1="302.466645631195,-33.5444264007499"
-                    Point2="306.466645631195,-33.5444264007499"
-                    Point3="306.466645631195,-37.5444264007499" />
+                    Point1="258.966667342541,-19.4473858414672"
+                    Point2="262.966667342541,-19.4473858414672"
+                    Point3="262.966667342541,-23.4473858414672" />
                   <mssgle:LineSegment
-                    End="306.466645631195,-75.3666660097577" />
+                    End="262.966667342541,-40.56176462729" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -1419,45 +1419,47 @@
     </LayoutInfo>
   </Package>
   <TaskHost
-    design-time-name="Package\Import CSV">
+    design-time-name="Package\Data Flow Task">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="187.2,41.6"
-          Id="Package\Import CSV\SQL Server Destination"
-          TopLeft="324.999982242784,162.066665539675" />
+          Id="Package\Data Flow Task\SQL Server Destination"
+          TopLeft="340.714286439577,143.764705756338" />
         <NodeLayout
-          Size="151.2,41.6"
-          Id="Package\Import CSV\Flat File Source"
-          TopLeft="103.333327687449,160.333332218395" />
+          Size="150.4,41.6"
+          Id="Package\Data Flow Task\Flat File Source"
+          TopLeft="117.85714310803,144.52941163802" />
         <EdgeLayout
-          Id="Package\Import CSV.Paths[Flat File Source Output]"
-          TopLeft="254.533327687449,181.999998879035">
+          Id="Package\Data Flow Task.Paths[Flat File Source Output]"
+          TopLeft="268.25714310803,164.947058697179">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="70.4666545553345,0"
+              EndConnector="72.4571433315472,0"
               Start="0,0"
-              End="62.9666545553345,0">
+              End="64.9571433315472,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="62.9666545553345,0" />
+                    End="64.9571433315472,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\Import CSV\SQL Server Destination">
+    design-time-name="Package\Data Flow Task\SQL Server Destination">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>

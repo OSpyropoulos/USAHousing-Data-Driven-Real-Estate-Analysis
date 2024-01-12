@@ -1,0 +1,256 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="80ebda53-c36d-4b9b-931a-9eab2630611d" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Amenities Dim</ID>
+  <Name>Amenities Dim</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-1748" scrolltop="-3365" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="7768" y="10837" backcolor="2039583" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="010000009001b0300100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="amenities_dim" left="20" top="0" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="4233" height="4106" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000891000000a100000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_amenities_dim" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-1748</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-3365</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="1f78b266-11e2-471d-bbda-6877b8d65f3c">
+    <DataSourceViewID>USA Housng DB</DataSourceViewID>
+  </Source>
+  <ErrorConfiguration dwd:design-time-name="5d4613ec-4e0b-4257-84f6-7979527da067">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="53615874-5bb6-4a22-9b17-29a589080cc0">
+      <ID>Amenities Id</ID>
+      <Name>Amenities Id</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="e6e30ad3-99a9-4e1d-81ea-dd75bdbdfb09">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="bb0a92f4-672f-4f8a-9a81-90fff7551aa3">
+            <TableID>dbo_amenities_dim</TableID>
+            <ColumnID>amenities_id</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="59d531c3-fe12-406e-b41a-a72abb8f5985">
+          <AttributeID>Cats Allowed</AttributeID>
+          <Name>Cats Allowed</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="16decdbf-6103-44f9-8ebc-f509e9e746f4">
+          <AttributeID>Dogs Allowed</AttributeID>
+          <Name>Dogs Allowed</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="962d7e7e-46d6-417e-a05e-ad3da86677b5">
+          <AttributeID>Smoking Allowed</AttributeID>
+          <Name>Smoking Allowed</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="a8f00690-9a29-4cd1-9884-664344ee1b56">
+          <AttributeID>Wheelchair Access</AttributeID>
+          <Name>Wheelchair Access</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="239a66d2-8ad0-4cd1-bc48-e49988d3b79e">
+          <AttributeID>Electric Vehicle Charge</AttributeID>
+          <Name>Electric Vehicle Charge</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="0d8508d5-32a0-4e69-b45b-28fcfe0f964b">
+          <AttributeID>Comes Furnished</AttributeID>
+          <Name>Comes Furnished</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="3c1b970c-966c-4ab2-9e98-50945b81202c">
+          <AttributeID>Laundry Options</AttributeID>
+          <Name>Laundry Options</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="9b7ac8cd-3a5e-4e1b-8daf-d0dc3ce0e9ec">
+          <AttributeID>Parking Options</AttributeID>
+          <Name>Parking Options</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="846427e2-eec2-4f6f-932a-3121edfa6ba3">
+      <ID>Cats Allowed</ID>
+      <Name>Cats Allowed</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="3dccb501-4709-4fea-889e-6c9072ea668c">
+          <DataType>Boolean</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="87f1fe03-b07c-49c4-a96d-383f78f08865">
+            <TableID>dbo_amenities_dim</TableID>
+            <ColumnID>cats_allowed</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="eba3c0b8-0579-404f-bd01-d20c381128d4">
+      <ID>Dogs Allowed</ID>
+      <Name>Dogs Allowed</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="c3cacf97-6382-4d84-92d4-416aa6a2295f">
+          <DataType>Boolean</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="ce5f368a-3740-43a5-a4ec-724ddf9099c1">
+            <TableID>dbo_amenities_dim</TableID>
+            <ColumnID>dogs_allowed</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="69fb098b-073f-4d6a-ad5c-c5af9b715214">
+      <ID>Smoking Allowed</ID>
+      <Name>Smoking Allowed</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="5b264573-3f1c-4005-980e-c106a45cb597">
+          <DataType>Boolean</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="815f8449-0dc4-45bb-834d-0242dc2acb8c">
+            <TableID>dbo_amenities_dim</TableID>
+            <ColumnID>smoking_allowed</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="d4a9bb52-d28a-40b5-b2ea-7632dfcb410d">
+      <ID>Wheelchair Access</ID>
+      <Name>Wheelchair Access</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="b6ea2b8a-e04f-4ae8-83cb-9934714eb8ee">
+          <DataType>Boolean</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="69f61cc8-1391-4d52-9219-235058fff8f1">
+            <TableID>dbo_amenities_dim</TableID>
+            <ColumnID>wheelchair_access</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="57d9d873-3a99-483c-83bb-b1ea82ef367d">
+      <ID>Electric Vehicle Charge</ID>
+      <Name>Electric Vehicle Charge</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="c449ea49-aa6f-4846-84b6-deb5d722f06a">
+          <DataType>Boolean</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="20069e1d-ca35-4e17-8220-e7ae2c93e3ef">
+            <TableID>dbo_amenities_dim</TableID>
+            <ColumnID>electric_vehicle_charge</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="36544434-a9c5-42ad-b9b2-cf0efbfb61b1">
+      <ID>Comes Furnished</ID>
+      <Name>Comes Furnished</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="a9bde1fb-293d-42f9-bc88-30d3fc847362">
+          <DataType>Boolean</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="d5cec1a4-e67f-4a29-9e32-18ef2a0194ce">
+            <TableID>dbo_amenities_dim</TableID>
+            <ColumnID>comes_furnished</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="61c0bf0a-921c-4c28-903e-73a5dc0ffe25">
+      <ID>Laundry Options</ID>
+      <Name>Laundry Options</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="ce89c9bf-8d3c-4ee3-bfd3-d2ef9661813d">
+          <DataType>WChar</DataType>
+          <DataSize>64</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="fee77d2b-7165-4aeb-90bb-ca128df825c6">
+            <TableID>dbo_amenities_dim</TableID>
+            <ColumnID>laundry_options</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="7ffa5987-314f-46b5-b994-746f84f0edae">
+      <ID>Parking Options</ID>
+      <Name>Parking Options</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="05514102-2660-4683-875c-0048bd581a6f">
+          <DataType>WChar</DataType>
+          <DataSize>64</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="ab015c78-08df-4413-9bb7-dc3f03bdb78d">
+            <TableID>dbo_amenities_dim</TableID>
+            <ColumnID>parking_options</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>
