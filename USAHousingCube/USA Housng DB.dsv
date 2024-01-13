@@ -1,0 +1,160 @@
+﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="2f07a42f-1d26-48c2-b21e-ec687ba3cdff" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>USA Housng DB</ID>
+  <Name>USA Housng DB</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CurrentLayout</Name>
+      <Value>_ALL_TABLES_</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SchemaRestriction</Name>
+      <Value></Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:RetrieveRelationships</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:Layouts</Name>
+      <Value>
+        <Layouts xmlns="">
+          <Diagram>
+            <Name>_ALL_TABLES_</Name>
+            <DiagramLayout />
+            <ShowRelationshipNames>False</ShowRelationshipNames>
+            <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
+            <DiagramViewPortLeft>0</DiagramViewPortLeft>
+            <DiagramViewPortTop>0</DiagramViewPortTop>
+            <DiagramBoundingLeft>0</DiagramBoundingLeft>
+            <DiagramBoundingTop>0</DiagramBoundingTop>
+            <DiagramZoom>100</DiagramZoom>
+          </Diagram>
+        </Layouts>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <DataSourceID>USA Housng DB</DataSourceID>
+  <Schema>
+    <xs:schema id="USA_x0020_Housng_x0020_DB" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+      <xs:element name="USA_x0020_Housng_x0020_DB" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="7f579723-f2a7-4fea-bb4f-cd3ad1c5cdd4">
+        <xs:complexType>
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="dbo_listings_fact" msprop:DbTableName="listings_fact" msprop:FriendlyName="listings_fact" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="421f2fea-e72e-4cfb-8efa-a4211c96bccf">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="listing_id" msprop:FriendlyName="listing_id" msprop:DbColumnName="listing_id" msprop:design-time-name="121f196b-97bf-442b-828d-47673b64c4aa" type="xs:long" />
+                  <xs:element name="location" msprop:FriendlyName="location" msprop:DbColumnName="location" msprop:design-time-name="8c60c47d-3549-4278-a1ef-ce7b686f99dd" type="xs:int" />
+                  <xs:element name="property" msprop:FriendlyName="property" msprop:DbColumnName="property" msprop:design-time-name="bc3be9b4-0f61-4544-8115-05d7499d9454" type="xs:int" />
+                  <xs:element name="amenities" msprop:FriendlyName="amenities" msprop:DbColumnName="amenities" msprop:design-time-name="b9ed06e5-4cd4-40ad-a783-5298fce2464e" type="xs:int" />
+                  <xs:element name="sqfeet" msprop:FriendlyName="sqfeet" msprop:DbColumnName="sqfeet" msprop:design-time-name="5a4671c5-5a8a-4bfe-bba3-c833020c1325" type="xs:int" />
+                  <xs:element name="price" msprop:FriendlyName="price" msprop:DbColumnName="price" msprop:design-time-name="3d5ca59f-cc2b-4d89-80fb-11890a8788da" type="xs:int" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_amenities_dim" msprop:DbTableName="amenities_dim" msprop:FriendlyName="amenities_dim" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="d2beb632-8270-4faf-b66e-e47507dde058">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="amenities_id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:FriendlyName="amenities_id" msprop:DbColumnName="amenities_id" msprop:design-time-name="22ef3efa-5dea-4f13-89ed-f0e1608154a6" type="xs:int" />
+                  <xs:element name="cats_allowed" msprop:FriendlyName="cats_allowed" msprop:DbColumnName="cats_allowed" msprop:design-time-name="d4068454-73d7-449a-810d-ff18f1b23c48" type="xs:boolean" />
+                  <xs:element name="dogs_allowed" msprop:FriendlyName="dogs_allowed" msprop:DbColumnName="dogs_allowed" msprop:design-time-name="38fc013f-a312-4044-800e-92a737fc596e" type="xs:boolean" />
+                  <xs:element name="smoking_allowed" msprop:FriendlyName="smoking_allowed" msprop:DbColumnName="smoking_allowed" msprop:design-time-name="0561b1c2-9f02-4564-a0d2-a1e39dcfb9d8" type="xs:boolean" />
+                  <xs:element name="wheelchair_access" msprop:FriendlyName="wheelchair_access" msprop:DbColumnName="wheelchair_access" msprop:design-time-name="883321c4-7bf7-4868-8962-d67fd7a1d4c2" type="xs:boolean" />
+                  <xs:element name="electric_vehicle_charge" msprop:FriendlyName="electric_vehicle_charge" msprop:DbColumnName="electric_vehicle_charge" msprop:design-time-name="abb5449f-0496-44c4-a477-d21e45473a19" type="xs:boolean" />
+                  <xs:element name="comes_furnished" msprop:FriendlyName="comes_furnished" msprop:DbColumnName="comes_furnished" msprop:design-time-name="19c9e24c-4f39-48f8-acd0-bdcc93eb88a5" type="xs:boolean" />
+                  <xs:element name="laundry_options" msprop:FriendlyName="laundry_options" msprop:DbColumnName="laundry_options" msprop:design-time-name="e0003dc3-7bd4-4450-9451-a3763305cafc">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="64" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="parking_options" msprop:FriendlyName="parking_options" msprop:DbColumnName="parking_options" msprop:design-time-name="6deb0500-9e67-4e0d-a363-3b9b52f48128">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="64" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_location_dim" msprop:DbTableName="location_dim" msprop:FriendlyName="location_dim" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="cb3c47f2-c572-49a3-8e23-50a0bf16d943">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="location_id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:FriendlyName="location_id" msprop:DbColumnName="location_id" msprop:design-time-name="119f57a3-682f-434c-8331-f3b4e62ac86e" type="xs:int" />
+                  <xs:element name="region" msprop:FriendlyName="region" msprop:DbColumnName="region" msprop:design-time-name="e8357120-b7ad-4b7c-9ce2-fd311acafd89">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="64" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="state" msprop:FriendlyName="state" msprop:DbColumnName="state" msprop:design-time-name="239e9c8d-d467-40b8-9042-a2720e8a47aa">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="64" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="lat" msprop:FriendlyName="lat" msprop:DbColumnName="lat" msprop:design-time-name="20bcb9b2-eb5c-4460-8bb8-93c5c36b6900" type="xs:double" />
+                  <xs:element name="long" msprop:FriendlyName="long" msprop:DbColumnName="long" msprop:design-time-name="c0eb91ce-f4ad-4b6d-948b-3819d2924c1a" type="xs:double" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_property_dim" msprop:DbTableName="property_dim" msprop:FriendlyName="property_dim" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="d5112b99-53ee-44ec-97bf-a0ec8a765b4b">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="property_id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:FriendlyName="property_id" msprop:DbColumnName="property_id" msprop:design-time-name="9e3ff917-a156-4516-9259-ec1ce83fd23c" type="xs:int" />
+                  <xs:element name="type" msprop:FriendlyName="type" msprop:DbColumnName="type" msprop:design-time-name="2ed3976c-6089-4013-b9db-72c64de0904e">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="64" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="beds" msprop:FriendlyName="beds" msprop:DbColumnName="beds" msprop:design-time-name="419796e8-18d3-46ac-b076-965ca09ecbad" type="xs:int" />
+                  <xs:element name="baths" msprop:FriendlyName="baths" msprop:DbColumnName="baths" msprop:design-time-name="bec620d8-541f-4c32-a4fb-5656c33b7ae4" type="xs:double" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:choice>
+        </xs:complexType>
+        <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_listings_fact" />
+          <xs:field xpath="listing_id" />
+        </xs:unique>
+        <xs:unique name="dbo_amenities_dim_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_amenities_dim" />
+          <xs:field xpath="amenities_id" />
+        </xs:unique>
+        <xs:unique name="dbo_location_dim_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_location_dim" />
+          <xs:field xpath="location_id" />
+        </xs:unique>
+        <xs:unique name="dbo_property_dim_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_property_dim" />
+          <xs:field xpath="property_id" />
+        </xs:unique>
+        <xs:keyref name="FK_listings_fact_property_dim" refer="dbo_property_dim_Constraint1">
+          <xs:selector xpath=".//dbo_listings_fact" />
+          <xs:field xpath="property" />
+        </xs:keyref>
+        <xs:keyref name="FK_listings_fact_amenities_dim" refer="dbo_amenities_dim_Constraint1">
+          <xs:selector xpath=".//dbo_listings_fact" />
+          <xs:field xpath="amenities" />
+        </xs:keyref>
+        <xs:keyref name="FK_listings_fact_location_dim" refer="dbo_location_dim_Constraint1">
+          <xs:selector xpath=".//dbo_listings_fact" />
+          <xs:field xpath="location" />
+        </xs:keyref>
+      </xs:element>
+    </xs:schema>
+    <USA_x0020_Housng_x0020_DB xmlns="" />
+  </Schema>
+</DataSourceView>
