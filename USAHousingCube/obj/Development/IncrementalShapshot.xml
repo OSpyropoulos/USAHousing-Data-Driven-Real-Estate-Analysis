@@ -54,7 +54,7 @@
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Cube</Type>
-        <TimeStamp>gJyU57zp6JHvMav6TUSLrYWcdF0=1/12/2024 7:57:03 PM1/12/2024 7:40:26 PM09EvwjIqDPGMHuz/2r0t+oHW4i4=1/12/2024 7:40:26 PM1/12/2024 7:40:26 PM</TimeStamp>
+        <TimeStamp>rJ57eq9AT8uP9mgLiETGDcoVSxg=1/14/2024 9:07:47 PM1/12/2024 7:40:26 PM09EvwjIqDPGMHuz/2r0t+oHW4i4=1/12/2024 7:40:26 PM1/12/2024 7:40:26 PM</TimeStamp>
         <ID>
           <String>USA Housng DB</String>
         </ID>
@@ -71,5 +71,5 @@
   </Snapshot>
   <AssemblyLocations />
   <ProcessingComplete>true</ProcessingComplete>
-  <LastDeployed>2024-01-12T17:57:05.57Z</LastDeployed>
+  <LastDeployed>2024-01-14T19:07:50.283333Z</LastDeployed>
 </DeploymentSnapshot>
