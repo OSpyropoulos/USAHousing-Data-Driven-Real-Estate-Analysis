@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="9"
-  DTS:VersionGUID="{7F518FDA-9A55-4586-8215-A2CEBF54257C}">
+  DTS:VersionBuild="67"
+  DTS:VersionGUID="{234604C3-E5A0-4ED9-BC13-4F8BD9DC42E7}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -188,17 +188,50 @@
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[LocalHost.USAHousngDB]"
       DTS:CreationName="OLEDB"
-      DTS:DTSID="{CBCE5215-F728-439F-B6DC-D3387EBED77B}"
+      DTS:DTSID="{F0728FCF-6582-4C9F-9F12-F3C9FBC44748}"
       DTS:ObjectName="LocalHost.USAHousngDB">
       <DTS:ObjectData>
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="1"
           DTS:ConnectRetryInterval="5"
-          DTS:ConnectionString="Data Source=.;Initial Catalog=USAHousngDB;Provider=SQLOLEDB.1;Integrated Security=SSPI;Application Name=SSIS-Package-{CBCE5215-F728-439F-B6DC-D3387EBED77B}LocalHost.USAHousngDB;Auto Translate=False;" />
+          DTS:ConnectionString="Data Source=.;Initial Catalog=USAHousngDB;Provider=SQLOLEDB.1;Integrated Security=SSPI;Application Name=SSIS-Package-{F0728FCF-6582-4C9F-9F12-F3C9FBC44748}LocalHost.USAHousngDB;Auto Translate=False;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
   </DTS:ConnectionManagers>
-  <DTS:Variables />
+  <DTS:Variables>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{4A0D337A-16E0-49AF-A9CB-5442412FBF65}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="ResultColumns">
+      <DTS:VariableValue
+        DTS:DataType="8"
+        xml:space="preserve"></DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{1701B9D7-A6F3-459B-A9E5-709E7E666910}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="Variable">
+      <DTS:VariableValue
+        DTS:DataType="8">ResultColumns</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{EAE8307A-1417-467D-9854-307E65ECFEE8}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="XmlResult">
+      <DTS:VariableValue
+        DTS:DataType="8"
+        xml:space="preserve"></DTS:VariableValue>
+    </DTS:Variable>
+  </DTS:Variables>
+  <DTS:LoggingOptions
+    DTS:FilterKind="0"
+    DTS:LoggingMode="1" />
   <DTS:Executables>
     <DTS:Executable
       DTS:refId="Package\Data Flow Task"
@@ -210,527 +243,13 @@
       DTS:ObjectName="Data Flow Task"
       DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
       <DTS:Variables />
+      <DTS:LoggingOptions
+        DTS:FilterKind="0"
+        DTS:LoggingMode="2" />
       <DTS:ObjectData>
         <pipeline
           version="1">
           <components>
-            <component
-              refId="Package\Data Flow Task\Flat File Source"
-              componentClassID="Microsoft.FlatFileSource"
-              contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
-              description="Flat File Source"
-              localeId="1033"
-              name="Flat File Source"
-              usesDispositions="true"
-              version="1">
-              <properties>
-                <property
-                  dataType="System.Boolean"
-                  description="Specifies whether zero-length columns are treated as null."
-                  name="RetainNulls">false</property>
-                <property
-                  dataType="System.String"
-                  description="Specifies the name of an output column containing the file name. If no name is specified, no output column containing the file name will be generated."
-                  name="FileNameColumnName"></property>
-              </properties>
-              <connections>
-                <connection
-                  refId="Package\Data Flow Task\Flat File Source.Connections[FlatFileConnection]"
-                  connectionManagerID="Package.ConnectionManagers[Flat File Connection Manager]"
-                  connectionManagerRefId="Package.ConnectionManagers[Flat File Connection Manager]"
-                  name="FlatFileConnection" />
-              </connections>
-              <outputs>
-                <output
-                  refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output]"
-                  name="Flat File Source Output">
-                  <outputColumns>
-                    <outputColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[id]"
-                      dataType="i8"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[id]"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[id]"
-                      name="id"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the data is in binary format."
-                          name="UseBinaryFormat">false</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[region]"
-                      codePage="1252"
-                      dataType="str"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[region]"
-                      length="64"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[region]"
-                      name="region"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the data is in binary format."
-                          name="UseBinaryFormat">false</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[price]"
-                      dataType="i8"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[price]"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[price]"
-                      name="price"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the data is in binary format."
-                          name="UseBinaryFormat">false</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[type]"
-                      codePage="1252"
-                      dataType="str"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[type]"
-                      length="64"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[type]"
-                      name="type"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the data is in binary format."
-                          name="UseBinaryFormat">false</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[sqfeet]"
-                      dataType="i8"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[sqfeet]"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[sqfeet]"
-                      name="sqfeet"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the data is in binary format."
-                          name="UseBinaryFormat">false</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[beds]"
-                      dataType="i8"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[beds]"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[beds]"
-                      name="beds"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the data is in binary format."
-                          name="UseBinaryFormat">false</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[baths]"
-                      dataType="r8"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[baths]"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[baths]"
-                      name="baths"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the data is in binary format."
-                          name="UseBinaryFormat">false</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[cats_allowed]"
-                      dataType="bool"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[cats_allowed]"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[cats_allowed]"
-                      name="cats_allowed"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the data is in binary format."
-                          name="UseBinaryFormat">false</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[dogs_allowed]"
-                      dataType="bool"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[dogs_allowed]"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[dogs_allowed]"
-                      name="dogs_allowed"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the data is in binary format."
-                          name="UseBinaryFormat">false</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[smoking_allowed]"
-                      dataType="bool"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[smoking_allowed]"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[smoking_allowed]"
-                      name="smoking_allowed"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the data is in binary format."
-                          name="UseBinaryFormat">false</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[wheelchair_access]"
-                      dataType="bool"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[wheelchair_access]"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[wheelchair_access]"
-                      name="wheelchair_access"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the data is in binary format."
-                          name="UseBinaryFormat">false</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[electric_vehicle_charge]"
-                      dataType="bool"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[electric_vehicle_charge]"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[electric_vehicle_charge]"
-                      name="electric_vehicle_charge"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the data is in binary format."
-                          name="UseBinaryFormat">false</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[comes_furnished]"
-                      dataType="bool"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[comes_furnished]"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[comes_furnished]"
-                      name="comes_furnished"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the data is in binary format."
-                          name="UseBinaryFormat">false</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[laundry_options]"
-                      codePage="1252"
-                      dataType="str"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[laundry_options]"
-                      length="64"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[laundry_options]"
-                      name="laundry_options"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the data is in binary format."
-                          name="UseBinaryFormat">false</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[parking_options]"
-                      codePage="1252"
-                      dataType="str"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[parking_options]"
-                      length="64"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[parking_options]"
-                      name="parking_options"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the data is in binary format."
-                          name="UseBinaryFormat">false</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[lat]"
-                      dataType="r8"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[lat]"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[lat]"
-                      name="lat"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the data is in binary format."
-                          name="UseBinaryFormat">false</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[long]"
-                      dataType="r8"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[long]"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[long]"
-                      name="long"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the data is in binary format."
-                          name="UseBinaryFormat">false</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[state]"
-                      codePage="1252"
-                      dataType="str"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[state]"
-                      length="64"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[state]"
-                      name="state"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the data is in binary format."
-                          name="UseBinaryFormat">false</property>
-                      </properties>
-                    </outputColumn>
-                  </outputColumns>
-                  <externalMetadataColumns
-                    isUsed="True">
-                    <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[id]"
-                      dataType="i8"
-                      name="id" />
-                    <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[region]"
-                      codePage="1252"
-                      dataType="str"
-                      length="64"
-                      name="region" />
-                    <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[price]"
-                      dataType="i8"
-                      name="price" />
-                    <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[type]"
-                      codePage="1252"
-                      dataType="str"
-                      length="64"
-                      name="type" />
-                    <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[sqfeet]"
-                      dataType="i8"
-                      name="sqfeet" />
-                    <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[beds]"
-                      dataType="i8"
-                      name="beds" />
-                    <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[baths]"
-                      dataType="r8"
-                      name="baths" />
-                    <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[cats_allowed]"
-                      dataType="bool"
-                      name="cats_allowed" />
-                    <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[dogs_allowed]"
-                      dataType="bool"
-                      name="dogs_allowed" />
-                    <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[smoking_allowed]"
-                      dataType="bool"
-                      name="smoking_allowed" />
-                    <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[wheelchair_access]"
-                      dataType="bool"
-                      name="wheelchair_access" />
-                    <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[electric_vehicle_charge]"
-                      dataType="bool"
-                      name="electric_vehicle_charge" />
-                    <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[comes_furnished]"
-                      dataType="bool"
-                      name="comes_furnished" />
-                    <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[laundry_options]"
-                      codePage="1252"
-                      dataType="str"
-                      length="64"
-                      name="laundry_options" />
-                    <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[parking_options]"
-                      codePage="1252"
-                      dataType="str"
-                      length="64"
-                      name="parking_options" />
-                    <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[lat]"
-                      dataType="r8"
-                      name="lat" />
-                    <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[long]"
-                      dataType="r8"
-                      name="long" />
-                    <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[state]"
-                      codePage="1252"
-                      dataType="str"
-                      length="64"
-                      name="state" />
-                  </externalMetadataColumns>
-                </output>
-                <output
-                  refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Error Output]"
-                  isErrorOut="true"
-                  name="Flat File Source Error Output">
-                  <outputColumns>
-                    <outputColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
-                      codePage="1252"
-                      dataType="text"
-                      description="Flat File Source Error Output Column"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
-                      name="Flat File Source Error Output Column" />
-                    <outputColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
-                      dataType="i4"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
-                      name="ErrorCode"
-                      specialFlags="1" />
-                    <outputColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
-                      dataType="i4"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
-                      name="ErrorColumn"
-                      specialFlags="2" />
-                  </outputColumns>
-                  <externalMetadataColumns />
-                </output>
-              </outputs>
-            </component>
             <component
               refId="Package\Data Flow Task\SQL Server Destination"
               componentClassID="Microsoft.SQLServerDestination"
@@ -751,7 +270,7 @@
                   dataType="System.String"
                   description="The name of the database object to copy data into."
                   expressionType="Notify"
-                  name="BulkInsertTableName">[staging]</property>
+                  name="BulkInsertTableName">[dbo].[staging]</property>
                 <property
                   dataType="System.Boolean"
                   description="Specifies that any constraints on the destination object are checked during the data copy operation. Corresponds to the bulk insert CHECK_CONSTRAINTS option."
@@ -820,7 +339,7 @@
                       cachedDataType="i8"
                       cachedName="id"
                       externalMetadataColumnId="Package\Data Flow Task\SQL Server Destination.Inputs[SQL Server Destination Input].ExternalColumns[id]"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[id]" />
+                      lineageId="Package\Data Flow Task\USAHousing CSV.Outputs[Flat File Source Output].Columns[id]" />
                     <inputColumn
                       refId="Package\Data Flow Task\SQL Server Destination.Inputs[SQL Server Destination Input].Columns[region]"
                       cachedCodepage="1252"
@@ -828,13 +347,13 @@
                       cachedLength="64"
                       cachedName="region"
                       externalMetadataColumnId="Package\Data Flow Task\SQL Server Destination.Inputs[SQL Server Destination Input].ExternalColumns[region]"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[region]" />
+                      lineageId="Package\Data Flow Task\USAHousing CSV.Outputs[Flat File Source Output].Columns[region]" />
                     <inputColumn
                       refId="Package\Data Flow Task\SQL Server Destination.Inputs[SQL Server Destination Input].Columns[price]"
                       cachedDataType="i8"
                       cachedName="price"
                       externalMetadataColumnId="Package\Data Flow Task\SQL Server Destination.Inputs[SQL Server Destination Input].ExternalColumns[price]"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[price]" />
+                      lineageId="Package\Data Flow Task\USAHousing CSV.Outputs[Flat File Source Output].Columns[price]" />
                     <inputColumn
                       refId="Package\Data Flow Task\SQL Server Destination.Inputs[SQL Server Destination Input].Columns[type]"
                       cachedCodepage="1252"
@@ -842,61 +361,61 @@
                       cachedLength="64"
                       cachedName="type"
                       externalMetadataColumnId="Package\Data Flow Task\SQL Server Destination.Inputs[SQL Server Destination Input].ExternalColumns[type]"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[type]" />
+                      lineageId="Package\Data Flow Task\USAHousing CSV.Outputs[Flat File Source Output].Columns[type]" />
                     <inputColumn
                       refId="Package\Data Flow Task\SQL Server Destination.Inputs[SQL Server Destination Input].Columns[sqfeet]"
                       cachedDataType="i8"
                       cachedName="sqfeet"
                       externalMetadataColumnId="Package\Data Flow Task\SQL Server Destination.Inputs[SQL Server Destination Input].ExternalColumns[sqfeet]"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[sqfeet]" />
+                      lineageId="Package\Data Flow Task\USAHousing CSV.Outputs[Flat File Source Output].Columns[sqfeet]" />
                     <inputColumn
                       refId="Package\Data Flow Task\SQL Server Destination.Inputs[SQL Server Destination Input].Columns[beds]"
                       cachedDataType="i8"
                       cachedName="beds"
                       externalMetadataColumnId="Package\Data Flow Task\SQL Server Destination.Inputs[SQL Server Destination Input].ExternalColumns[beds]"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[beds]" />
+                      lineageId="Package\Data Flow Task\USAHousing CSV.Outputs[Flat File Source Output].Columns[beds]" />
                     <inputColumn
                       refId="Package\Data Flow Task\SQL Server Destination.Inputs[SQL Server Destination Input].Columns[baths]"
                       cachedDataType="r8"
                       cachedName="baths"
                       externalMetadataColumnId="Package\Data Flow Task\SQL Server Destination.Inputs[SQL Server Destination Input].ExternalColumns[baths]"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[baths]" />
+                      lineageId="Package\Data Flow Task\USAHousing CSV.Outputs[Flat File Source Output].Columns[baths]" />
                     <inputColumn
                       refId="Package\Data Flow Task\SQL Server Destination.Inputs[SQL Server Destination Input].Columns[cats_allowed]"
                       cachedDataType="bool"
                       cachedName="cats_allowed"
                       externalMetadataColumnId="Package\Data Flow Task\SQL Server Destination.Inputs[SQL Server Destination Input].ExternalColumns[cats_allowed]"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[cats_allowed]" />
+                      lineageId="Package\Data Flow Task\USAHousing CSV.Outputs[Flat File Source Output].Columns[cats_allowed]" />
                     <inputColumn
                       refId="Package\Data Flow Task\SQL Server Destination.Inputs[SQL Server Destination Input].Columns[dogs_allowed]"
                       cachedDataType="bool"
                       cachedName="dogs_allowed"
                       externalMetadataColumnId="Package\Data Flow Task\SQL Server Destination.Inputs[SQL Server Destination Input].ExternalColumns[dogs_allowed]"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[dogs_allowed]" />
+                      lineageId="Package\Data Flow Task\USAHousing CSV.Outputs[Flat File Source Output].Columns[dogs_allowed]" />
                     <inputColumn
                       refId="Package\Data Flow Task\SQL Server Destination.Inputs[SQL Server Destination Input].Columns[smoking_allowed]"
                       cachedDataType="bool"
                       cachedName="smoking_allowed"
                       externalMetadataColumnId="Package\Data Flow Task\SQL Server Destination.Inputs[SQL Server Destination Input].ExternalColumns[smoking_allowed]"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[smoking_allowed]" />
+                      lineageId="Package\Data Flow Task\USAHousing CSV.Outputs[Flat File Source Output].Columns[smoking_allowed]" />
                     <inputColumn
                       refId="Package\Data Flow Task\SQL Server Destination.Inputs[SQL Server Destination Input].Columns[wheelchair_access]"
                       cachedDataType="bool"
                       cachedName="wheelchair_access"
                       externalMetadataColumnId="Package\Data Flow Task\SQL Server Destination.Inputs[SQL Server Destination Input].ExternalColumns[wheelchair_access]"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[wheelchair_access]" />
+                      lineageId="Package\Data Flow Task\USAHousing CSV.Outputs[Flat File Source Output].Columns[wheelchair_access]" />
                     <inputColumn
                       refId="Package\Data Flow Task\SQL Server Destination.Inputs[SQL Server Destination Input].Columns[electric_vehicle_charge]"
                       cachedDataType="bool"
                       cachedName="electric_vehicle_charge"
                       externalMetadataColumnId="Package\Data Flow Task\SQL Server Destination.Inputs[SQL Server Destination Input].ExternalColumns[electric_vehicle_charge]"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[electric_vehicle_charge]" />
+                      lineageId="Package\Data Flow Task\USAHousing CSV.Outputs[Flat File Source Output].Columns[electric_vehicle_charge]" />
                     <inputColumn
                       refId="Package\Data Flow Task\SQL Server Destination.Inputs[SQL Server Destination Input].Columns[comes_furnished]"
                       cachedDataType="bool"
                       cachedName="comes_furnished"
                       externalMetadataColumnId="Package\Data Flow Task\SQL Server Destination.Inputs[SQL Server Destination Input].ExternalColumns[comes_furnished]"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[comes_furnished]" />
+                      lineageId="Package\Data Flow Task\USAHousing CSV.Outputs[Flat File Source Output].Columns[comes_furnished]" />
                     <inputColumn
                       refId="Package\Data Flow Task\SQL Server Destination.Inputs[SQL Server Destination Input].Columns[laundry_options]"
                       cachedCodepage="1252"
@@ -904,7 +423,7 @@
                       cachedLength="64"
                       cachedName="laundry_options"
                       externalMetadataColumnId="Package\Data Flow Task\SQL Server Destination.Inputs[SQL Server Destination Input].ExternalColumns[laundry_options]"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[laundry_options]" />
+                      lineageId="Package\Data Flow Task\USAHousing CSV.Outputs[Flat File Source Output].Columns[laundry_options]" />
                     <inputColumn
                       refId="Package\Data Flow Task\SQL Server Destination.Inputs[SQL Server Destination Input].Columns[parking_options]"
                       cachedCodepage="1252"
@@ -912,19 +431,19 @@
                       cachedLength="64"
                       cachedName="parking_options"
                       externalMetadataColumnId="Package\Data Flow Task\SQL Server Destination.Inputs[SQL Server Destination Input].ExternalColumns[parking_options]"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[parking_options]" />
+                      lineageId="Package\Data Flow Task\USAHousing CSV.Outputs[Flat File Source Output].Columns[parking_options]" />
                     <inputColumn
                       refId="Package\Data Flow Task\SQL Server Destination.Inputs[SQL Server Destination Input].Columns[lat]"
                       cachedDataType="r8"
                       cachedName="lat"
                       externalMetadataColumnId="Package\Data Flow Task\SQL Server Destination.Inputs[SQL Server Destination Input].ExternalColumns[lat]"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[lat]" />
+                      lineageId="Package\Data Flow Task\USAHousing CSV.Outputs[Flat File Source Output].Columns[lat]" />
                     <inputColumn
                       refId="Package\Data Flow Task\SQL Server Destination.Inputs[SQL Server Destination Input].Columns[long]"
                       cachedDataType="r8"
                       cachedName="long"
                       externalMetadataColumnId="Package\Data Flow Task\SQL Server Destination.Inputs[SQL Server Destination Input].ExternalColumns[long]"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[long]" />
+                      lineageId="Package\Data Flow Task\USAHousing CSV.Outputs[Flat File Source Output].Columns[long]" />
                     <inputColumn
                       refId="Package\Data Flow Task\SQL Server Destination.Inputs[SQL Server Destination Input].Columns[state]"
                       cachedCodepage="1252"
@@ -932,7 +451,7 @@
                       cachedLength="64"
                       cachedName="state"
                       externalMetadataColumnId="Package\Data Flow Task\SQL Server Destination.Inputs[SQL Server Destination Input].ExternalColumns[state]"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[state]" />
+                      lineageId="Package\Data Flow Task\USAHousing CSV.Outputs[Flat File Source Output].Columns[state]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
@@ -1022,13 +541,530 @@
                 </input>
               </inputs>
             </component>
+            <component
+              refId="Package\Data Flow Task\USAHousing CSV"
+              componentClassID="Microsoft.FlatFileSource"
+              contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Flat File Source"
+              localeId="1033"
+              name="USAHousing CSV"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether zero-length columns are treated as null."
+                  name="RetainNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of an output column containing the file name. If no name is specified, no output column containing the file name will be generated."
+                  name="FileNameColumnName"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Data Flow Task\USAHousing CSV.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Flat File Connection Manager]"
+                  connectionManagerRefId="Package.ConnectionManagers[Flat File Connection Manager]"
+                  name="FlatFileConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task\USAHousing CSV.Outputs[Flat File Source Output]"
+                  name="Flat File Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\USAHousing CSV.Outputs[Flat File Source Output].Columns[id]"
+                      dataType="i8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\USAHousing CSV.Outputs[Flat File Source Output].ExternalColumns[id]"
+                      lineageId="Package\Data Flow Task\USAHousing CSV.Outputs[Flat File Source Output].Columns[id]"
+                      name="id"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\USAHousing CSV.Outputs[Flat File Source Output].Columns[region]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\USAHousing CSV.Outputs[Flat File Source Output].ExternalColumns[region]"
+                      length="64"
+                      lineageId="Package\Data Flow Task\USAHousing CSV.Outputs[Flat File Source Output].Columns[region]"
+                      name="region"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\USAHousing CSV.Outputs[Flat File Source Output].Columns[price]"
+                      dataType="i8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\USAHousing CSV.Outputs[Flat File Source Output].ExternalColumns[price]"
+                      lineageId="Package\Data Flow Task\USAHousing CSV.Outputs[Flat File Source Output].Columns[price]"
+                      name="price"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\USAHousing CSV.Outputs[Flat File Source Output].Columns[type]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\USAHousing CSV.Outputs[Flat File Source Output].ExternalColumns[type]"
+                      length="64"
+                      lineageId="Package\Data Flow Task\USAHousing CSV.Outputs[Flat File Source Output].Columns[type]"
+                      name="type"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\USAHousing CSV.Outputs[Flat File Source Output].Columns[sqfeet]"
+                      dataType="i8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\USAHousing CSV.Outputs[Flat File Source Output].ExternalColumns[sqfeet]"
+                      lineageId="Package\Data Flow Task\USAHousing CSV.Outputs[Flat File Source Output].Columns[sqfeet]"
+                      name="sqfeet"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\USAHousing CSV.Outputs[Flat File Source Output].Columns[beds]"
+                      dataType="i8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\USAHousing CSV.Outputs[Flat File Source Output].ExternalColumns[beds]"
+                      lineageId="Package\Data Flow Task\USAHousing CSV.Outputs[Flat File Source Output].Columns[beds]"
+                      name="beds"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\USAHousing CSV.Outputs[Flat File Source Output].Columns[baths]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\USAHousing CSV.Outputs[Flat File Source Output].ExternalColumns[baths]"
+                      lineageId="Package\Data Flow Task\USAHousing CSV.Outputs[Flat File Source Output].Columns[baths]"
+                      name="baths"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\USAHousing CSV.Outputs[Flat File Source Output].Columns[cats_allowed]"
+                      dataType="bool"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\USAHousing CSV.Outputs[Flat File Source Output].ExternalColumns[cats_allowed]"
+                      lineageId="Package\Data Flow Task\USAHousing CSV.Outputs[Flat File Source Output].Columns[cats_allowed]"
+                      name="cats_allowed"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\USAHousing CSV.Outputs[Flat File Source Output].Columns[dogs_allowed]"
+                      dataType="bool"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\USAHousing CSV.Outputs[Flat File Source Output].ExternalColumns[dogs_allowed]"
+                      lineageId="Package\Data Flow Task\USAHousing CSV.Outputs[Flat File Source Output].Columns[dogs_allowed]"
+                      name="dogs_allowed"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\USAHousing CSV.Outputs[Flat File Source Output].Columns[smoking_allowed]"
+                      dataType="bool"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\USAHousing CSV.Outputs[Flat File Source Output].ExternalColumns[smoking_allowed]"
+                      lineageId="Package\Data Flow Task\USAHousing CSV.Outputs[Flat File Source Output].Columns[smoking_allowed]"
+                      name="smoking_allowed"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\USAHousing CSV.Outputs[Flat File Source Output].Columns[wheelchair_access]"
+                      dataType="bool"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\USAHousing CSV.Outputs[Flat File Source Output].ExternalColumns[wheelchair_access]"
+                      lineageId="Package\Data Flow Task\USAHousing CSV.Outputs[Flat File Source Output].Columns[wheelchair_access]"
+                      name="wheelchair_access"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\USAHousing CSV.Outputs[Flat File Source Output].Columns[electric_vehicle_charge]"
+                      dataType="bool"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\USAHousing CSV.Outputs[Flat File Source Output].ExternalColumns[electric_vehicle_charge]"
+                      lineageId="Package\Data Flow Task\USAHousing CSV.Outputs[Flat File Source Output].Columns[electric_vehicle_charge]"
+                      name="electric_vehicle_charge"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\USAHousing CSV.Outputs[Flat File Source Output].Columns[comes_furnished]"
+                      dataType="bool"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\USAHousing CSV.Outputs[Flat File Source Output].ExternalColumns[comes_furnished]"
+                      lineageId="Package\Data Flow Task\USAHousing CSV.Outputs[Flat File Source Output].Columns[comes_furnished]"
+                      name="comes_furnished"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\USAHousing CSV.Outputs[Flat File Source Output].Columns[laundry_options]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\USAHousing CSV.Outputs[Flat File Source Output].ExternalColumns[laundry_options]"
+                      length="64"
+                      lineageId="Package\Data Flow Task\USAHousing CSV.Outputs[Flat File Source Output].Columns[laundry_options]"
+                      name="laundry_options"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\USAHousing CSV.Outputs[Flat File Source Output].Columns[parking_options]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\USAHousing CSV.Outputs[Flat File Source Output].ExternalColumns[parking_options]"
+                      length="64"
+                      lineageId="Package\Data Flow Task\USAHousing CSV.Outputs[Flat File Source Output].Columns[parking_options]"
+                      name="parking_options"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\USAHousing CSV.Outputs[Flat File Source Output].Columns[lat]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\USAHousing CSV.Outputs[Flat File Source Output].ExternalColumns[lat]"
+                      lineageId="Package\Data Flow Task\USAHousing CSV.Outputs[Flat File Source Output].Columns[lat]"
+                      name="lat"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\USAHousing CSV.Outputs[Flat File Source Output].Columns[long]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\USAHousing CSV.Outputs[Flat File Source Output].ExternalColumns[long]"
+                      lineageId="Package\Data Flow Task\USAHousing CSV.Outputs[Flat File Source Output].Columns[long]"
+                      name="long"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\USAHousing CSV.Outputs[Flat File Source Output].Columns[state]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\USAHousing CSV.Outputs[Flat File Source Output].ExternalColumns[state]"
+                      length="64"
+                      lineageId="Package\Data Flow Task\USAHousing CSV.Outputs[Flat File Source Output].Columns[state]"
+                      name="state"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\USAHousing CSV.Outputs[Flat File Source Output].ExternalColumns[id]"
+                      dataType="i8"
+                      name="id" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\USAHousing CSV.Outputs[Flat File Source Output].ExternalColumns[region]"
+                      codePage="1252"
+                      dataType="str"
+                      length="64"
+                      name="region" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\USAHousing CSV.Outputs[Flat File Source Output].ExternalColumns[price]"
+                      dataType="i8"
+                      name="price" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\USAHousing CSV.Outputs[Flat File Source Output].ExternalColumns[type]"
+                      codePage="1252"
+                      dataType="str"
+                      length="64"
+                      name="type" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\USAHousing CSV.Outputs[Flat File Source Output].ExternalColumns[sqfeet]"
+                      dataType="i8"
+                      name="sqfeet" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\USAHousing CSV.Outputs[Flat File Source Output].ExternalColumns[beds]"
+                      dataType="i8"
+                      name="beds" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\USAHousing CSV.Outputs[Flat File Source Output].ExternalColumns[baths]"
+                      dataType="r8"
+                      name="baths" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\USAHousing CSV.Outputs[Flat File Source Output].ExternalColumns[cats_allowed]"
+                      dataType="bool"
+                      name="cats_allowed" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\USAHousing CSV.Outputs[Flat File Source Output].ExternalColumns[dogs_allowed]"
+                      dataType="bool"
+                      name="dogs_allowed" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\USAHousing CSV.Outputs[Flat File Source Output].ExternalColumns[smoking_allowed]"
+                      dataType="bool"
+                      name="smoking_allowed" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\USAHousing CSV.Outputs[Flat File Source Output].ExternalColumns[wheelchair_access]"
+                      dataType="bool"
+                      name="wheelchair_access" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\USAHousing CSV.Outputs[Flat File Source Output].ExternalColumns[electric_vehicle_charge]"
+                      dataType="bool"
+                      name="electric_vehicle_charge" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\USAHousing CSV.Outputs[Flat File Source Output].ExternalColumns[comes_furnished]"
+                      dataType="bool"
+                      name="comes_furnished" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\USAHousing CSV.Outputs[Flat File Source Output].ExternalColumns[laundry_options]"
+                      codePage="1252"
+                      dataType="str"
+                      length="64"
+                      name="laundry_options" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\USAHousing CSV.Outputs[Flat File Source Output].ExternalColumns[parking_options]"
+                      codePage="1252"
+                      dataType="str"
+                      length="64"
+                      name="parking_options" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\USAHousing CSV.Outputs[Flat File Source Output].ExternalColumns[lat]"
+                      dataType="r8"
+                      name="lat" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\USAHousing CSV.Outputs[Flat File Source Output].ExternalColumns[long]"
+                      dataType="r8"
+                      name="long" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\USAHousing CSV.Outputs[Flat File Source Output].ExternalColumns[state]"
+                      codePage="1252"
+                      dataType="str"
+                      length="64"
+                      name="state" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Data Flow Task\USAHousing CSV.Outputs[Flat File Source Error Output]"
+                  isErrorOut="true"
+                  name="Flat File Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\USAHousing CSV.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      codePage="1252"
+                      dataType="text"
+                      description="Flat File Source Error Output Column"
+                      lineageId="Package\Data Flow Task\USAHousing CSV.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      name="Flat File Source Error Output Column" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\USAHousing CSV.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\USAHousing CSV.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\USAHousing CSV.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\USAHousing CSV.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
           </components>
           <paths>
             <path
               refId="Package\Data Flow Task.Paths[Flat File Source Output]"
               endId="Package\Data Flow Task\SQL Server Destination.Inputs[SQL Server Destination Input]"
               name="Flat File Source Output"
-              startId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output]" />
+              startId="Package\Data Flow Task\USAHousing CSV.Outputs[Flat File Source Output]" />
           </paths>
         </pipeline>
       </DTS:ObjectData>
@@ -1044,9 +1080,12 @@
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
       DTS:ThreadHint="0">
       <DTS:Variables />
+      <DTS:LoggingOptions
+        DTS:FilterKind="0"
+        DTS:LoggingMode="2" />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
-          SQLTask:Connection="{CBCE5215-F728-439F-B6DC-D3387EBED77B}"
+          SQLTask:Connection="{F0728FCF-6582-4C9F-9F12-F3C9FBC44748}"
           SQLTask:SqlStatementSource="TRUNCATE TABLE staging;&#xA;TRUNCATE TABLE listings_fact;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
@@ -1059,12 +1098,15 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="Update Amenities Table"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="2">
+      DTS:ThreadHint="1">
       <DTS:Variables />
+      <DTS:LoggingOptions
+        DTS:FilterKind="0"
+        DTS:LoggingMode="2" />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
-          SQLTask:Connection="{CBCE5215-F728-439F-B6DC-D3387EBED77B}"
-          SQLTask:SqlStatementSource="INSERT INTO amenities_dim (cats_allowed, dogs_allowed, smoking_allowed, wheelchair_access, electric_vehicle_charge, comes_furnished, laundry_options, parking_options)&#xA;SELECT DISTINCT cats_allowed, dogs_allowed, smoking_allowed, wheelchair_access, electric_vehicle_charge, comes_furnished, laundry_options, parking_options&#xA;FROM staging&#xA;WHERE NOT EXISTS (SELECT *&#xA;FROM  amenities_dim &#xA;WHERE cats_allowed= cats_allowed&#xA;AND  dogs_allowed=  dogs_allowed&#xA;AND  wheelchair_access =  wheelchair_access&#xA;AND electric_vehicle_charge = electric_vehicle_charge&#xA;AND comes_furnished = comes_furnished&#xA;AND laundry_options = laundry_options&#xA;AND parking_options=  parking_options);" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+          SQLTask:Connection="{F0728FCF-6582-4C9F-9F12-F3C9FBC44748}"
+          SQLTask:SqlStatementSource="INSERT INTO amenities_dim (cats_allowed, dogs_allowed, smoking_allowed, wheelchair_access, electric_vehicle_charge, comes_furnished, laundry_options, parking_options)&#xA;&#xA;SELECT DISTINCT cats_allowed, dogs_allowed, smoking_allowed, wheelchair_access, electric_vehicle_charge, comes_furnished, laundry_options, parking_options&#xA;&#xA;FROM staging&#xA;&#xA;WHERE NOT EXISTS (SELECT *&#xA;&#xA;FROM  amenities_dim &#xA;&#xA;WHERE cats_allowed= cats_allowed&#xA;AND  dogs_allowed=  dogs_allowed&#xA;AND  wheelchair_access =  wheelchair_access&#xA;AND electric_vehicle_charge = electric_vehicle_charge&#xA;AND comes_furnished = comes_furnished&#xA;AND laundry_options = laundry_options&#xA;AND parking_options=  parking_options);" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
     <DTS:Executable
@@ -1078,9 +1120,12 @@
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
       DTS:ThreadHint="0">
       <DTS:Variables />
+      <DTS:LoggingOptions
+        DTS:FilterKind="0"
+        DTS:LoggingMode="2" />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
-          SQLTask:Connection="{CBCE5215-F728-439F-B6DC-D3387EBED77B}"
+          SQLTask:Connection="{F0728FCF-6582-4C9F-9F12-F3C9FBC44748}"
           SQLTask:SqlStatementSource="INSERT INTO listings_fact (listing_id, location, property, amenities, sqfeet, price)&#xA;SELECT &#xA;    staging.id,&#xA;    location_dim.location_id AS location,&#xA;    property_dim.property_id AS property,&#xA;    amenities_dim.amenities_id AS amenities,&#xA;    staging.sqfeet,&#xA;    staging.price&#xA;FROM &#xA;    staging&#xA;INNER JOIN &#xA;    location_dim ON staging.region = location_dim.region AND staging.state = location_dim.state AND staging.lat = location_dim.lat AND staging.long = location_dim.long&#xA;INNER JOIN &#xA;    property_dim ON staging.type = property_dim.type AND staging.beds = property_dim.beds AND staging.baths = property_dim.baths&#xA;INNER JOIN &#xA;    amenities_dim ON staging.cats_allowed = amenities_dim.cats_allowed AND staging.dogs_allowed = amenities_dim.dogs_allowed AND staging.smoking_allowed = amenities_dim.smoking_allowed AND staging.wheelchair_access = amenities_dim.wheelchair_access AND staging.electric_vehicle_charge = amenities_dim.electric_vehicle_charge AND staging.comes_furnished = amenities_dim.comes_furnished AND staging.laundry_options = amenities_dim.laundry_options AND staging.parking_options = amenities_dim.parking_options;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
@@ -1093,12 +1138,14 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="Update Location Dimension"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="0">
+      DTS:ThreadHint="2">
       <DTS:Variables />
+      <DTS:LoggingOptions
+        DTS:FilterKind="0" />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
-          SQLTask:Connection="{CBCE5215-F728-439F-B6DC-D3387EBED77B}"
-          SQLTask:SqlStatementSource="INSERT INTO location_dim (region, state, lat, long)&#xA;&#xA;SELECT DISTINCT region, state, lat, long&#xA;&#xA;FROM staging&#xA;&#xA;WHERE NOT EXISTS (SELECT *&#xA;FROM  location_dim  &#xA;WHERE region= region &#xA;AND state= state&#xA;AND lat = lat&#xA;AND long = long);" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+          SQLTask:Connection="{F0728FCF-6582-4C9F-9F12-F3C9FBC44748}"
+          SQLTask:SqlStatementSource="INSERT INTO dbo.location_dim (region, state, lat, long)&#xA;&#xA;SELECT DISTINCT region, state, lat, long&#xA;&#xA;FROM staging&#xA;&#xA;WHERE NOT EXISTS (SELECT *&#xA;FROM  location_dim  &#xA;WHERE region= region &#xA;AND state= state&#xA;AND lat=lat&#xA;AND long=long);" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
     <DTS:Executable
@@ -1110,11 +1157,14 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="Update Property Dimension"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="1">
+      DTS:ThreadHint="0">
       <DTS:Variables />
+      <DTS:LoggingOptions
+        DTS:FilterKind="0"
+        DTS:LoggingMode="2" />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
-          SQLTask:Connection="{CBCE5215-F728-439F-B6DC-D3387EBED77B}"
+          SQLTask:Connection="{F0728FCF-6582-4C9F-9F12-F3C9FBC44748}"
           SQLTask:SqlStatementSource="INSERT INTO property_dim (type, beds, baths)&#xA;&#xA;SELECT DISTINCT type, beds, baths&#xA;&#xA;FROM staging&#xA;&#xA;WHERE NOT EXISTS (SELECT *&#xA;FROM  property_dim &#xA;WHERE type= type&#xA;AND beds= beds&#xA;AND baths=baths)" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
@@ -1131,7 +1181,7 @@
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint 1]"
       DTS:CreationName=""
-      DTS:DTSID="{EAC80A6B-962A-4D83-BB9C-C09CC656684C}"
+      DTS:DTSID="{57229342-A6DF-4DF0-AA32-55B8EF6E083A}"
       DTS:From="Package\Data Flow Task"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint 1"
@@ -1200,19 +1250,19 @@
         <NodeLayout
           Size="205.6,41.6"
           Id="Package\Update Amenities Table"
-          TopLeft="478.750001019133,231.13235273858" />
+          TopLeft="478.750001019133,231.897058620263" />
         <NodeLayout
-          Size="162.4,41.6"
+          Size="164,41.6"
           Id="Package\Update Fact Table"
           TopLeft="796.250001695007,141.47058811129" />
         <NodeLayout
           Size="207.2,41.6"
           Id="Package\Update Location Dimension"
-          TopLeft="481.428572453406,39.7647058474976" />
+          TopLeft="483.214286742922,38.8088234953943" />
         <NodeLayout
           Size="207.2,41.6"
           Id="Package\Update Property Dimension"
-          TopLeft="475.714286726957,139.176470466242" />
+          TopLeft="474.821429582198,139.176470466242" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint]"
           TopLeft="179.328571389038,163.652941069224">
@@ -1241,26 +1291,26 @@
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="247.900000478966,-61.0176469736961"
+              EndConnector="216.485714768481,-61.9735293257997"
               Start="0,0"
-              End="247.900000478966,-53.5176469736961">
+              End="216.485714768481,-54.4735293257997">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,-26.5088234868481" />
+                    End="0,-32.8991818284647" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,-26.5088234868481"
-                    Point2="0,-30.5088234868481"
-                    Point3="4,-30.5088234868481" />
+                    Point1="0,-32.8991818284647"
+                    Point2="0,-36.8991818284647"
+                    Point3="4,-36.8991818284647" />
                   <mssgle:LineSegment
-                    End="243.900000478966,-30.5088234868481" />
+                    End="212.485714768481,-36.8991818284647" />
                   <mssgle:CubicBezierSegment
-                    Point1="243.900000478966,-30.5088234868481"
-                    Point2="247.900000478966,-30.5088234868481"
-                    Point3="247.900000478966,-34.5088234868481" />
+                    Point1="212.485714768481,-36.8991818284647"
+                    Point2="216.485714768481,-36.8991818284647"
+                    Point3="216.485714768481,-40.8991818284647" />
                   <mssgle:LineSegment
-                    End="247.900000478966,-53.5176469736961" />
+                    End="216.485714768481,-54.4735293257997" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -1275,14 +1325,14 @@
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="63.385714752516,0"
+              EndConnector="62.4928576077574,0"
               Start="0,0"
-              End="55.885714752516,0">
+              End="54.9928576077574,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="55.885714752516,0" />
+                    End="54.9928576077574,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -1297,26 +1347,26 @@
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="244.421429044693,47.1499999173862"
+              EndConnector="211.488095711359,47.9147057990687"
               Start="0,0"
-              End="244.421429044693,39.6499999173862">
+              End="211.488095711359,40.4147057990687">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,19.5749999586931" />
+                    End="0,24.5268248425343" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,19.5749999586931"
-                    Point2="0,23.5749999586931"
-                    Point3="4,23.5749999586931" />
+                    Point1="0,24.5268248425343"
+                    Point2="0,28.5268248425343"
+                    Point3="4,28.5268248425343" />
                   <mssgle:LineSegment
-                    End="240.421429044693,23.5749999586931" />
+                    End="207.488095711359,28.5268248425343" />
                   <mssgle:CubicBezierSegment
-                    Point1="240.421429044693,23.5749999586931"
-                    Point2="244.421429044693,23.5749999586931"
-                    Point3="244.421429044693,27.5749999586931" />
+                    Point1="207.488095711359,28.5268248425343"
+                    Point2="211.488095711359,28.5268248425343"
+                    Point3="211.488095711359,32.5268248425343" />
                   <mssgle:LineSegment
-                    End="244.421429044693,39.6499999173862" />
+                    End="211.488095711359,40.4147057990687" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -1327,30 +1377,30 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 4]"
-          TopLeft="618.228572453406,81.3647058474976">
+          TopLeft="620.014286742922,80.4088234953943">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="259.221429241601,60.1058822637924"
+              EndConnector="258.235714952085,61.0617646158957"
               Start="0,0"
-              End="259.221429241601,52.6058822637924">
+              End="258.235714952085,53.5617646158957">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,20.3187017894884" />
+                    End="0,20.7054495917187" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,20.3187017894884"
-                    Point2="0,24.3187017894884"
-                    Point3="4,24.3187017894884" />
+                    Point1="0,20.7054495917187"
+                    Point2="0,24.7054495917187"
+                    Point3="4,24.7054495917187" />
                   <mssgle:LineSegment
-                    End="255.221429241601,24.3187017894884" />
+                    End="254.235714952085,24.7054495917187" />
                   <mssgle:CubicBezierSegment
-                    Point1="255.221429241601,24.3187017894884"
-                    Point2="259.221429241601,24.3187017894884"
-                    Point3="259.221429241601,28.3187017894884" />
+                    Point1="254.235714952085,24.7054495917187"
+                    Point2="258.235714952085,24.7054495917187"
+                    Point3="258.235714952085,28.7054495917187" />
                   <mssgle:LineSegment
-                    End="259.221429241601,52.6058822637924" />
+                    End="258.235714952085,53.5617646158957" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -1361,18 +1411,18 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 5]"
-          TopLeft="682.914286726957,161.123529288766">
+          TopLeft="682.021429582198,161.123529288766">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="113.33571496805,0"
+              EndConnector="114.228572112809,0"
               Start="0,0"
-              End="105.83571496805,0">
+              End="106.728572112809,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="105.83571496805,0" />
+                    End="106.728572112809,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -1383,30 +1433,30 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 6]"
-          TopLeft="614.483334352466,231.13235273858">
+          TopLeft="614.483334352466,231.897058620263">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="262.966667342541,-48.06176462729"
+              EndConnector="263.766667342541,-48.8264705089727"
               Start="0,0"
-              End="262.966667342541,-40.56176462729">
+              End="263.766667342541,-41.3264705089727">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,-15.4473858414672" />
+                    End="0,-15.7568112329743" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,-15.4473858414672"
-                    Point2="0,-19.4473858414672"
-                    Point3="4,-19.4473858414672" />
+                    Point1="0,-15.7568112329743"
+                    Point2="0,-19.7568112329743"
+                    Point3="4,-19.7568112329743" />
                   <mssgle:LineSegment
-                    End="258.966667342541,-19.4473858414672" />
+                    End="259.766667342541,-19.7568112329743" />
                   <mssgle:CubicBezierSegment
-                    Point1="258.966667342541,-19.4473858414672"
-                    Point2="262.966667342541,-19.4473858414672"
-                    Point3="262.966667342541,-23.4473858414672" />
+                    Point1="259.766667342541,-19.7568112329743"
+                    Point2="263.766667342541,-19.7568112329743"
+                    Point3="263.766667342541,-23.7568112329743" />
                   <mssgle:LineSegment
-                    End="262.966667342541,-40.56176462729" />
+                    End="263.766667342541,-41.3264705089727" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -1422,37 +1472,35 @@
     design-time-name="Package\Data Flow Task">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="157.6,41.6"
+          Id="Package\Data Flow Task\USAHousing CSV"
+          TopLeft="120.000000255449,143.764705756337" />
         <NodeLayout
           Size="187.2,41.6"
           Id="Package\Data Flow Task\SQL Server Destination"
-          TopLeft="340.714286439577,143.764705756338" />
-        <NodeLayout
-          Size="150.4,41.6"
-          Id="Package\Data Flow Task\Flat File Source"
-          TopLeft="117.85714310803,144.52941163802" />
+          TopLeft="393.571429409239,136.882352821194" />
         <EdgeLayout
           Id="Package\Data Flow Task.Paths[Flat File Source Output]"
-          TopLeft="268.25714310803,164.947058697179">
+          TopLeft="277.600000255449,161.123529288766">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="72.4571433315472,0"
+              EndConnector="115.97142915379,0"
               Start="0,0"
-              End="64.9571433315472,0">
+              End="108.47142915379,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="64.9571433315472,0" />
+                    End="108.47142915379,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>

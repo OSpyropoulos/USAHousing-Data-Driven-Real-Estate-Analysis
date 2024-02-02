@@ -1,4 +1,4 @@
-﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="2f07a42f-1d26-48c2-b21e-ec687ba3cdff" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="09ab9526-52d0-466a-9127-e49f2c4bcb44" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
   <ID>USA Housng DB</ID>
   <Name>USA Housng DB</Name>
   <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
@@ -42,39 +42,39 @@
   <DataSourceID>USA Housng DB</DataSourceID>
   <Schema>
     <xs:schema id="USA_x0020_Housng_x0020_DB" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
-      <xs:element name="USA_x0020_Housng_x0020_DB" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="7f579723-f2a7-4fea-bb4f-cd3ad1c5cdd4">
+      <xs:element name="USA_x0020_Housng_x0020_DB" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="4e12dc93-341e-4b3e-b94a-319ebc55af14">
         <xs:complexType>
           <xs:choice minOccurs="0" maxOccurs="unbounded">
-            <xs:element name="dbo_listings_fact" msprop:DbTableName="listings_fact" msprop:FriendlyName="listings_fact" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="421f2fea-e72e-4cfb-8efa-a4211c96bccf">
+            <xs:element name="dbo_listings_fact" msprop:DbTableName="listings_fact" msprop:FriendlyName="listings_fact" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="4f6451f9-908b-4291-9154-8ccc69704548">
               <xs:complexType>
                 <xs:sequence>
-                  <xs:element name="listing_id" msprop:FriendlyName="listing_id" msprop:DbColumnName="listing_id" msprop:design-time-name="121f196b-97bf-442b-828d-47673b64c4aa" type="xs:long" />
-                  <xs:element name="location" msprop:FriendlyName="location" msprop:DbColumnName="location" msprop:design-time-name="8c60c47d-3549-4278-a1ef-ce7b686f99dd" type="xs:int" />
-                  <xs:element name="property" msprop:FriendlyName="property" msprop:DbColumnName="property" msprop:design-time-name="bc3be9b4-0f61-4544-8115-05d7499d9454" type="xs:int" />
-                  <xs:element name="amenities" msprop:FriendlyName="amenities" msprop:DbColumnName="amenities" msprop:design-time-name="b9ed06e5-4cd4-40ad-a783-5298fce2464e" type="xs:int" />
-                  <xs:element name="sqfeet" msprop:FriendlyName="sqfeet" msprop:DbColumnName="sqfeet" msprop:design-time-name="5a4671c5-5a8a-4bfe-bba3-c833020c1325" type="xs:int" />
-                  <xs:element name="price" msprop:FriendlyName="price" msprop:DbColumnName="price" msprop:design-time-name="3d5ca59f-cc2b-4d89-80fb-11890a8788da" type="xs:int" />
+                  <xs:element name="listing_id" msprop:FriendlyName="listing_id" msprop:DbColumnName="listing_id" msprop:design-time-name="3cceef8a-b58a-4b11-9ccc-dff363d6ddea" type="xs:long" />
+                  <xs:element name="location" msprop:FriendlyName="location" msprop:DbColumnName="location" msprop:design-time-name="9e90a55c-10c8-44cf-9dc8-8558ee769df2" type="xs:int" />
+                  <xs:element name="property" msprop:FriendlyName="property" msprop:DbColumnName="property" msprop:design-time-name="de0db3a5-e4c9-4674-9d06-5d626cbd7519" type="xs:int" />
+                  <xs:element name="amenities" msprop:FriendlyName="amenities" msprop:DbColumnName="amenities" msprop:design-time-name="a0236e7a-7b59-46ae-a857-9e0c569b36ef" type="xs:int" />
+                  <xs:element name="sqfeet" msprop:FriendlyName="sqfeet" msprop:DbColumnName="sqfeet" msprop:design-time-name="9ae93a61-ab3f-4e12-a49c-2322fa79da90" type="xs:int" />
+                  <xs:element name="price" msprop:FriendlyName="price" msprop:DbColumnName="price" msprop:design-time-name="548bb2b7-faab-46b3-95f7-36c749c47f8b" type="xs:int" />
                 </xs:sequence>
               </xs:complexType>
             </xs:element>
-            <xs:element name="dbo_amenities_dim" msprop:DbTableName="amenities_dim" msprop:FriendlyName="amenities_dim" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="d2beb632-8270-4faf-b66e-e47507dde058">
+            <xs:element name="dbo_amenities_dim" msprop:DbTableName="amenities_dim" msprop:FriendlyName="amenities_dim" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="6fbcc826-b42e-4656-93e3-a54b75dee31c">
               <xs:complexType>
                 <xs:sequence>
-                  <xs:element name="amenities_id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:FriendlyName="amenities_id" msprop:DbColumnName="amenities_id" msprop:design-time-name="22ef3efa-5dea-4f13-89ed-f0e1608154a6" type="xs:int" />
-                  <xs:element name="cats_allowed" msprop:FriendlyName="cats_allowed" msprop:DbColumnName="cats_allowed" msprop:design-time-name="d4068454-73d7-449a-810d-ff18f1b23c48" type="xs:boolean" />
-                  <xs:element name="dogs_allowed" msprop:FriendlyName="dogs_allowed" msprop:DbColumnName="dogs_allowed" msprop:design-time-name="38fc013f-a312-4044-800e-92a737fc596e" type="xs:boolean" />
-                  <xs:element name="smoking_allowed" msprop:FriendlyName="smoking_allowed" msprop:DbColumnName="smoking_allowed" msprop:design-time-name="0561b1c2-9f02-4564-a0d2-a1e39dcfb9d8" type="xs:boolean" />
-                  <xs:element name="wheelchair_access" msprop:FriendlyName="wheelchair_access" msprop:DbColumnName="wheelchair_access" msprop:design-time-name="883321c4-7bf7-4868-8962-d67fd7a1d4c2" type="xs:boolean" />
-                  <xs:element name="electric_vehicle_charge" msprop:FriendlyName="electric_vehicle_charge" msprop:DbColumnName="electric_vehicle_charge" msprop:design-time-name="abb5449f-0496-44c4-a477-d21e45473a19" type="xs:boolean" />
-                  <xs:element name="comes_furnished" msprop:FriendlyName="comes_furnished" msprop:DbColumnName="comes_furnished" msprop:design-time-name="19c9e24c-4f39-48f8-acd0-bdcc93eb88a5" type="xs:boolean" />
-                  <xs:element name="laundry_options" msprop:FriendlyName="laundry_options" msprop:DbColumnName="laundry_options" msprop:design-time-name="e0003dc3-7bd4-4450-9451-a3763305cafc">
+                  <xs:element name="amenities_id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:FriendlyName="amenities_id" msprop:DbColumnName="amenities_id" msprop:design-time-name="389010d0-b822-4de5-86ee-6234300b8c8e" type="xs:int" />
+                  <xs:element name="cats_allowed" msprop:FriendlyName="cats_allowed" msprop:DbColumnName="cats_allowed" msprop:design-time-name="ced55a2b-75d2-4b1d-b467-7265319e9402" type="xs:boolean" />
+                  <xs:element name="dogs_allowed" msprop:FriendlyName="dogs_allowed" msprop:DbColumnName="dogs_allowed" msprop:design-time-name="43e472fc-f97e-462a-9007-5d4c9926f2eb" type="xs:boolean" />
+                  <xs:element name="smoking_allowed" msprop:FriendlyName="smoking_allowed" msprop:DbColumnName="smoking_allowed" msprop:design-time-name="630cd2b9-6ec6-4118-8869-f23c7dd339db" type="xs:boolean" />
+                  <xs:element name="wheelchair_access" msprop:FriendlyName="wheelchair_access" msprop:DbColumnName="wheelchair_access" msprop:design-time-name="656bc6da-5b8d-4422-b5f9-b90d21196240" type="xs:boolean" />
+                  <xs:element name="electric_vehicle_charge" msprop:FriendlyName="electric_vehicle_charge" msprop:DbColumnName="electric_vehicle_charge" msprop:design-time-name="dab1f99e-7b03-44ba-be0a-c9e3e39d01dc" type="xs:boolean" />
+                  <xs:element name="comes_furnished" msprop:FriendlyName="comes_furnished" msprop:DbColumnName="comes_furnished" msprop:design-time-name="b931d75d-4159-4718-aaf9-028be84fc886" type="xs:boolean" />
+                  <xs:element name="laundry_options" msprop:FriendlyName="laundry_options" msprop:DbColumnName="laundry_options" msprop:design-time-name="b3abe770-b2d5-4b94-99c3-35596d9c3817">
                     <xs:simpleType>
                       <xs:restriction base="xs:string">
                         <xs:maxLength value="64" />
                       </xs:restriction>
                     </xs:simpleType>
                   </xs:element>
-                  <xs:element name="parking_options" msprop:FriendlyName="parking_options" msprop:DbColumnName="parking_options" msprop:design-time-name="6deb0500-9e67-4e0d-a363-3b9b52f48128">
+                  <xs:element name="parking_options" msprop:FriendlyName="parking_options" msprop:DbColumnName="parking_options" msprop:design-time-name="eda31442-75bd-47df-a95b-bf23cb6c7215">
                     <xs:simpleType>
                       <xs:restriction base="xs:string">
                         <xs:maxLength value="64" />
@@ -84,42 +84,42 @@
                 </xs:sequence>
               </xs:complexType>
             </xs:element>
-            <xs:element name="dbo_location_dim" msprop:DbTableName="location_dim" msprop:FriendlyName="location_dim" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="cb3c47f2-c572-49a3-8e23-50a0bf16d943">
+            <xs:element name="dbo_location_dim" msprop:DbTableName="location_dim" msprop:FriendlyName="location_dim" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="a9f462cb-c39a-4065-b438-fe629680627d">
               <xs:complexType>
                 <xs:sequence>
-                  <xs:element name="location_id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:FriendlyName="location_id" msprop:DbColumnName="location_id" msprop:design-time-name="119f57a3-682f-434c-8331-f3b4e62ac86e" type="xs:int" />
-                  <xs:element name="region" msprop:FriendlyName="region" msprop:DbColumnName="region" msprop:design-time-name="e8357120-b7ad-4b7c-9ce2-fd311acafd89">
+                  <xs:element name="location_id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:FriendlyName="location_id" msprop:DbColumnName="location_id" msprop:design-time-name="34a27d2a-c6e7-48f2-8330-dc1617075e2d" type="xs:int" />
+                  <xs:element name="region" msprop:FriendlyName="region" msprop:DbColumnName="region" msprop:design-time-name="e4c2c08c-8ae8-4ba4-944c-1f18eef53652">
                     <xs:simpleType>
                       <xs:restriction base="xs:string">
                         <xs:maxLength value="64" />
                       </xs:restriction>
                     </xs:simpleType>
                   </xs:element>
-                  <xs:element name="state" msprop:FriendlyName="state" msprop:DbColumnName="state" msprop:design-time-name="239e9c8d-d467-40b8-9042-a2720e8a47aa">
+                  <xs:element name="state" msprop:FriendlyName="state" msprop:DbColumnName="state" msprop:design-time-name="f547c924-e10b-46b8-a477-f8a6f35a369d">
                     <xs:simpleType>
                       <xs:restriction base="xs:string">
                         <xs:maxLength value="64" />
                       </xs:restriction>
                     </xs:simpleType>
                   </xs:element>
-                  <xs:element name="lat" msprop:FriendlyName="lat" msprop:DbColumnName="lat" msprop:design-time-name="20bcb9b2-eb5c-4460-8bb8-93c5c36b6900" type="xs:double" />
-                  <xs:element name="long" msprop:FriendlyName="long" msprop:DbColumnName="long" msprop:design-time-name="c0eb91ce-f4ad-4b6d-948b-3819d2924c1a" type="xs:double" />
+                  <xs:element name="lat" msprop:FriendlyName="lat" msprop:DbColumnName="lat" msprop:design-time-name="0e687c52-67ef-48f5-aec7-a8f490cdba05" type="xs:double" />
+                  <xs:element name="long" msprop:FriendlyName="long" msprop:DbColumnName="long" msprop:design-time-name="6988c2eb-f1d2-4de6-b56b-0aac553a8e5a" type="xs:double" />
                 </xs:sequence>
               </xs:complexType>
             </xs:element>
-            <xs:element name="dbo_property_dim" msprop:DbTableName="property_dim" msprop:FriendlyName="property_dim" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="d5112b99-53ee-44ec-97bf-a0ec8a765b4b">
+            <xs:element name="dbo_property_dim" msprop:DbTableName="property_dim" msprop:FriendlyName="property_dim" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="e508c237-7ad2-4732-8961-54d931421a7d">
               <xs:complexType>
                 <xs:sequence>
-                  <xs:element name="property_id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:FriendlyName="property_id" msprop:DbColumnName="property_id" msprop:design-time-name="9e3ff917-a156-4516-9259-ec1ce83fd23c" type="xs:int" />
-                  <xs:element name="type" msprop:FriendlyName="type" msprop:DbColumnName="type" msprop:design-time-name="2ed3976c-6089-4013-b9db-72c64de0904e">
+                  <xs:element name="property_id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:FriendlyName="property_id" msprop:DbColumnName="property_id" msprop:design-time-name="0cba21bd-915c-4017-b524-4b99f5102f43" type="xs:int" />
+                  <xs:element name="type" msprop:FriendlyName="type" msprop:DbColumnName="type" msprop:design-time-name="e7b99fbd-b147-48ee-a257-f206b16f8482">
                     <xs:simpleType>
                       <xs:restriction base="xs:string">
                         <xs:maxLength value="64" />
                       </xs:restriction>
                     </xs:simpleType>
                   </xs:element>
-                  <xs:element name="beds" msprop:FriendlyName="beds" msprop:DbColumnName="beds" msprop:design-time-name="419796e8-18d3-46ac-b076-965ca09ecbad" type="xs:int" />
-                  <xs:element name="baths" msprop:FriendlyName="baths" msprop:DbColumnName="baths" msprop:design-time-name="bec620d8-541f-4c32-a4fb-5656c33b7ae4" type="xs:double" />
+                  <xs:element name="beds" msprop:FriendlyName="beds" msprop:DbColumnName="beds" msprop:design-time-name="5ef40219-2510-4d60-bb72-30900baeaed6" type="xs:int" />
+                  <xs:element name="baths" msprop:FriendlyName="baths" msprop:DbColumnName="baths" msprop:design-time-name="ae749835-9ff1-4838-af8f-5919cd79c354" type="xs:double" />
                 </xs:sequence>
               </xs:complexType>
             </xs:element>

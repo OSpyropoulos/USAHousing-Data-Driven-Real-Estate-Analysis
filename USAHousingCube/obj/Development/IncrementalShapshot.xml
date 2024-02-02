@@ -19,42 +19,42 @@
     <ObjectSnapshots>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.RelationalDataSource</Type>
-        <TimeStamp>zBRTQfs9TMfw3FYIJtXe4oqNZ2w=1/12/2024 5:09:49 PM1/12/2024 4:10:12 PM</TimeStamp>
+        <TimeStamp>drx+bqc/ElkRc0+/CotvlWcSRww=2/2/2024 3:06:16 PM2/2/2024 3:06:16 PM</TimeStamp>
         <ID>
           <String>USA Housng DB</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.DataSourceView</Type>
-        <TimeStamp>xsZEtwQtaHq3p54XBtJX3KfONf8=1/12/2024 7:40:10 PM1/12/2024 7:40:10 PM</TimeStamp>
+        <TimeStamp>/ZdwRORJDkWNw1wsWlDxgggNcnM=2/2/2024 3:06:50 PM2/2/2024 3:06:50 PM</TimeStamp>
         <ID>
           <String>USA Housng DB</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>QG30R+pjPL9tw2HSCBjkWztTZ/U=1/12/2024 7:41:14 PM1/12/2024 7:40:26 PM</TimeStamp>
+        <TimeStamp>lvugP7wo9jaf6zJK8sRyF4ZTtHw=2/2/2024 3:11:10 PM2/2/2024 3:07:07 PM</TimeStamp>
         <ID>
           <String>Location Dim</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>+V62YjGB7kbV5g72GDlEQa8BDEE=1/12/2024 7:41:14 PM1/12/2024 7:40:26 PM</TimeStamp>
+        <TimeStamp>QUkAXs70M7SlClOxgcZd0+r+0GE=2/2/2024 3:11:10 PM2/2/2024 3:07:07 PM</TimeStamp>
         <ID>
           <String>Amenities Dim</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>5eRi3eHWk+cCFqMJ1ER0aXgIS1c=1/12/2024 7:41:14 PM1/12/2024 7:40:26 PM</TimeStamp>
+        <TimeStamp>nKrRrWAyDQ6isjgYi2E05EenwQc=2/2/2024 3:11:10 PM2/2/2024 3:07:07 PM</TimeStamp>
         <ID>
           <String>Property Dim</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Cube</Type>
-        <TimeStamp>rJ57eq9AT8uP9mgLiETGDcoVSxg=1/14/2024 9:07:47 PM1/12/2024 7:40:26 PM09EvwjIqDPGMHuz/2r0t+oHW4i4=1/12/2024 7:40:26 PM1/12/2024 7:40:26 PM</TimeStamp>
+        <TimeStamp>Jnb5ZxDyhLhVpRmW55xoGzZ2Bdo=2/2/2024 3:14:34 PM2/2/2024 3:07:07 PMq5gNtsqhGGYhzukcHTL5RaRCpwg=2/2/2024 3:07:07 PM2/2/2024 3:07:07 PM</TimeStamp>
         <ID>
           <String>USA Housng DB</String>
         </ID>
@@ -62,7 +62,7 @@
     </ObjectSnapshots>
     <DatabaseSnapshot>
       <Type>Microsoft.AnalysisServices.Database</Type>
-      <TimeStamp>hGKDg/TIhBBTL2CuNY5RPcU9PjA=1/12/2024 4:08:58 PM1/12/2024 4:08:58 PM</TimeStamp>
+      <TimeStamp>aXOiEeGUQDF9TGJkokr/fw+olCk=2/2/2024 3:04:30 PM2/2/2024 3:04:30 PM</TimeStamp>
       <ID>
         <String>USAHousingCube</String>
       </ID>
@@ -71,5 +71,5 @@
   </Snapshot>
   <AssemblyLocations />
   <ProcessingComplete>true</ProcessingComplete>
-  <LastDeployed>2024-01-14T19:07:50.283333Z</LastDeployed>
+  <LastDeployed>2024-02-02T13:17:21.316667Z</LastDeployed>
 </DeploymentSnapshot>

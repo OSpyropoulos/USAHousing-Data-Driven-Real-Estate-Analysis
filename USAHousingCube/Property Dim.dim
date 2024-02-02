@@ -1,4 +1,4 @@
-﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="29ce788a-6955-48a2-b884-d27a5c308598" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="cc1251b1-795d-4aca-b6c6-1de2b8e77bed" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
   <ID>Property Dim</ID>
   <Name>Property Dim</Name>
   <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
@@ -8,7 +8,7 @@
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
       <Value>
         <dds xmlns="">
-          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-2364" scrolltop="-4265" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="7768" y="10837" backcolor="2039583" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-1634" scrolltop="-7631" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="6308" y="17568" backcolor="2039583" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
             <font>
               <ddsxmlobjectstreamwrapper binary="010000009001b0300100065461686f6d61" />
             </font>
@@ -47,11 +47,11 @@
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
-      <Value>-2364</Value>
+      <Value>-1634</Value>
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
-      <Value>-4265</Value>
+      <Value>-7631</Value>
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
@@ -68,39 +68,39 @@
   </Annotations>
   <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
   <State>Unprocessed</State>
-  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="5b853310-8be8-4821-b2c5-0a5902d049f0">
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="307d5f86-30c5-4bdc-ba76-0ef1ed1c098b">
     <DataSourceViewID>USA Housng DB</DataSourceViewID>
   </Source>
-  <ErrorConfiguration dwd:design-time-name="a032802a-4507-40bb-93ba-8df699416d3a">
+  <ErrorConfiguration dwd:design-time-name="bc4d7373-c1b3-4bc6-86c6-4dbecb17d306">
     <KeyNotFound>ReportAndStop</KeyNotFound>
     <KeyDuplicate>ReportAndStop</KeyDuplicate>
     <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
   </ErrorConfiguration>
   <CurrentStorageMode>Molap</CurrentStorageMode>
   <Attributes>
-    <Attribute dwd:design-time-name="e543bd06-78ca-4f5f-92f0-64470eaa3dbe">
+    <Attribute dwd:design-time-name="85edf733-2804-48fc-b33d-bb4758e9f68a">
       <ID>Property Id</ID>
       <Name>Property Id</Name>
       <Usage>Key</Usage>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="4cf037fa-2d88-4bdf-a77c-e73681fb9097">
+        <KeyColumn dwd:design-time-name="7f1271ef-f548-4c9d-8709-7166606ea31e">
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="d19d1c82-0cbe-4e87-8b9a-9641bf5bcf54">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="d95d0717-4c16-4734-a31b-8ef60d7df9c6">
             <TableID>dbo_property_dim</TableID>
             <ColumnID>property_id</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
       <AttributeRelationships>
-        <AttributeRelationship dwd:design-time-name="b876a226-b850-4332-a2ed-25aa8a2af46f">
+        <AttributeRelationship dwd:design-time-name="72009ae9-589c-4bc4-8c5e-185bec29888b">
           <AttributeID>Type</AttributeID>
           <Name>Type</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="186c5bd2-5cb6-4af0-9320-8686ccc218ef">
+        <AttributeRelationship dwd:design-time-name="67d43835-faa5-4063-a3e4-9b5e1a8787b1">
           <AttributeID>Beds</AttributeID>
           <Name>Beds</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="7b5f8cfb-883e-4c4e-9387-d0906f33f8ed">
+        <AttributeRelationship dwd:design-time-name="a973c067-847a-4379-aec8-a3bb373a67b5">
           <AttributeID>Baths</AttributeID>
           <Name>Baths</Name>
         </AttributeRelationship>
@@ -109,14 +109,14 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="c702dda0-7051-4423-a534-b0196c449b59">
+    <Attribute dwd:design-time-name="1ea169f4-474e-41fc-9900-88139050a66b">
       <ID>Type</ID>
       <Name>Type</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="9dccfbbb-b8e4-4905-a8c2-275d39cf1cd9">
+        <KeyColumn dwd:design-time-name="791c092e-ba62-48ee-b7f9-5783d5b2dea9">
           <DataType>WChar</DataType>
           <DataSize>64</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="cc33beed-05c3-48cc-9a46-029244e4eb94">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="32f58bef-aa9e-4cd7-af89-a145b17dc13c">
             <TableID>dbo_property_dim</TableID>
             <ColumnID>type</ColumnID>
           </Source>
@@ -125,13 +125,13 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="88d213c9-62f7-4673-b7c6-055039527805">
+    <Attribute dwd:design-time-name="e158a263-b943-4ac7-bae3-e799c34a31c8">
       <ID>Beds</ID>
       <Name>Beds</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="debd8185-ec66-4759-8f93-b8314b6ea40f">
+        <KeyColumn dwd:design-time-name="6a327e35-f71a-4cb8-a7ca-9c0c495ef8c5">
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="810b80cd-f659-49d1-857e-d1eec859a52e">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="c10a6648-f5fd-413f-9754-cc7f088d6f3c">
             <TableID>dbo_property_dim</TableID>
             <ColumnID>beds</ColumnID>
           </Source>
@@ -140,13 +140,13 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="4ba41ab3-2ad2-46eb-9a9a-163304d38ddc">
+    <Attribute dwd:design-time-name="8b6f9576-504a-4f68-9146-1c8416ef28e6">
       <ID>Baths</ID>
       <Name>Baths</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="fac06f96-fcd3-4c7e-866c-0b2985cbf367">
+        <KeyColumn dwd:design-time-name="021fe840-dc59-4a05-be04-72d3aff003a7">
           <DataType>Double</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="ee3c44e1-96f7-4ecd-97d5-58d291e83423">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="2a4e4ade-9399-4537-b25c-6542f9896211">
             <TableID>dbo_property_dim</TableID>
             <ColumnID>baths</ColumnID>
           </Source>
