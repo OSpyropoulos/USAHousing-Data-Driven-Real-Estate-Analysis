@@ -1,4 +1,4 @@
-# 🏠 USA Housing Listings Analysis
+# 🏠 USA Housing Analysis
 
 This project focuses on analyzing housing listings data from the United States, utilizing various data warehousing, mining, and visualization techniques to gain insights into housing trends.
 
