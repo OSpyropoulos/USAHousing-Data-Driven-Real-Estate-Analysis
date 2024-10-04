@@ -6,11 +6,11 @@ This project focuses on analyzing housing listings data from the United States, 
 
 - **📁 Data/**: Contains the dataset used for analysis.
 - **📓 Jupyter Notebooks/**: Includes notebooks for data cleaning, preprocessing, and mining tasks.
-- **USAHousingCube/**: Analysis Services Multidimensional Project for OLAP cube creation.
-- **USAHousingETL/**: ETL process for data warehousing.
-- **PRESENTATION/**: Project presentation materials.
-- **REPORT/**: Detailed project report and findings.
-- **USAHousingVisualizations/**: Data visualization files and interactive dashboards.
+- **📁 USAHousingCube/**: Analysis Services Multidimensional Project for OLAP cube creation.
+- **📁 USAHousingETL/**: ETL process for data warehousing.
+- **📄 PRESENTATION/**: Project presentation materials.
+- **📄 REPORT/**: Detailed project report and findings.
+- **📊 USAHousingVisualizations/**: Data visualization files and interactive dashboards.
 
 ## Key Features
 
@@ -20,7 +20,7 @@ This project focuses on analyzing housing listings data from the United States, 
 - **Data Mining Tasks**:
   - Regression analysis
   - Clustering
-- **📊 Data Visualization**: Created using Power BI for visual insights.
+- **Data Visualization**: Created using Power BI for visual insights.
 
 ## Technologies Used
 
@@ -31,5 +31,5 @@ This project focuses on analyzing housing listings data from the United States, 
 - **RapidMiner**: For advanced data mining tasks.
 
 ## Contributors
-- Odysseas Spyropoulos
-- Ioannis Kalantzis
+- **Odysseas Spyropoulos**
+- **Ioannis Kalantzis**
